@@ -1,0 +1,11 @@
+.carousel-item {
+  background-image: url(/images/section-1/mobile/Layer\ 3.png);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+.sale__persent {
+  background-image: url(/images/section-1/mobile/Holidays.\ Attribute\ as\ Freepik\ from\ Flaticon.com.png);
+  background-size: cover;
+  background-color: lightgreen;
+}
