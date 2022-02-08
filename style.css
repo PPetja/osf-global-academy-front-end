@@ -1,7 +1,24 @@
+/* Header */
+.navigation {
+  height: 60px;
+  padding: 0;
+}
+.navigation__hamburger-icon {
+  width: 24px;
+}
+.accordion__item--bg:not(.collapsed),
+.accordion__item--bg {
+  background-color: #262a32;
+}
+.accordion-item--height {
+  height: 500px;
+}
+
+/* First section */
 .carousel__middle {
   background-image: url(/images/section-1/mobile/Layer\ 149.png);
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: cover;
   background-position-x: right;
   background-color: currentcolor;
@@ -9,7 +26,7 @@
 .carousel__start {
   background-image: url(/images/section-1/mobile/Layer\ 3.png);
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: cover;
   background-position-x: right;
   background-color: currentcolor;
@@ -17,7 +34,7 @@
 .carousel__end {
   background-image: url(/images/section-1/mobile/Layer\ 149.png);
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: cover;
   background-position-x: right;
   background-color: currentcolor;
@@ -27,16 +44,49 @@
   background-size: cover;
   background-color: lightgreen;
 }
+.slider-top {
+  margin-top: 85px;
+}
+.slider-top__header {
+  font-size: 28px;
+  margin-top: 50px;
+}
+.slider-top__text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.slider-top__button {
+  background: space;
+  font-size: 14px;
+  border: 2px solid #8e9092;
+  padding: 5px 25px 5px 25px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: white;
+}
+/* Second section */
 .carousel__card {
   background-image: url(/images/section-2/mobile/Layer\ 8.png);
   height: 372px;
   background-size: cover;
   background-position-x: right;
 }
+/* Third section */
 .banner {
   background-image: url(/images/section-3/mobile/Layer\ 148.png);
   background-size: cover;
   height: 180px;
   width: 100%;
   background-position: center;
+}
+/* Forth section */
+/* Footer */
+.footer {
+  height: 55px;
+  background: #262a32;
 }
