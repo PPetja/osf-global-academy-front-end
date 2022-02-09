@@ -39,10 +39,12 @@
   background-position-x: right;
   background-color: currentcolor;
 }
-.sale__persent {
+.discounts {
   background-image: url(/images/section-1/mobile/Holidays.\ Attribute\ as\ Freepik\ from\ Flaticon.com.png);
-  background-size: cover;
-  background-color: lightgreen;
+  background-color: #84bc22;
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  height: 335px;
 }
 .slider-top {
   margin-top: 85px;
@@ -68,6 +70,25 @@
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: white;
+}
+.discounts__img-header {
+  font-size: 100px;
+}
+.discounts__img-text {
+  font-size: 24px;
+}
+.discounts__header {
+  font-size: 18px;
+  color: #45413e;
+  margin-top: 40px;
+}
+.discounts__text {
+  font-size: 13px;
+  color: #45413e;
+  margin-bottom: 40px;
+}
+.discounts__button {
+  padding: 5px 20px 5px 20px;
 }
 /* Second section */
 .carousel__card {
