@@ -419,7 +419,7 @@
       </nav>
     </header>
     <main>
-      <section class="slider-top">
+      <section class="slider-top mb-4">
         <div
           id="carouselDark"
           class="carousel carousel-dark slide my-4 mx-3"
@@ -541,12 +541,20 @@
         </div>
       </section>
       <section class="conteiner-fluid text-center">
-        <h1>Popular Items</h1>
         <div
           id="carouselCaption"
-          class="carousel slide carousel-dark"
+          class="card-items carousel slide carousel-dark text-white"
           data-bs-ride="carousel"
         >
+          <div class="d-flex justify-content-center">
+            <span
+              class="w-25 border-bottom border-2 ms-3 border-secondary mb-2"
+            ></span>
+            <h1 class="card-items__header pt-4 m-0 w-50">Popular Items</h1>
+            <span
+              class="w-25 border-bottom border-2 me-3 border-secondary mb-2"
+            ></span>
+          </div>
           <div class="carousel-indicators">
             <button
               type="button"
@@ -600,9 +608,9 @@
               aria-label="Slide 8"
             ></button>
           </div>
-          <div class="carousel-inner p-5 rounded-3">
+          <div class="carousel-inner px-3 py-5 pt-4 rounded-3 text-black">
             <div class="carousel-item active">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 1.png"
                   class="card-img-top"
@@ -620,7 +628,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 2.png"
                   class="card-img-top"
@@ -632,13 +640,21 @@
                   <p class="card-text">
                     Hey - About A Longe <br />Chair AAL 93
                   </p>
-                  <button>$675.55</button>
-                  <button>BUY NOW</button>
+                  <a
+                    href="#"
+                    class="card__button-price--form text-decoration-none border-2 border text-success"
+                    >$675.55</a
+                  >
+                  <a
+                    href="#"
+                    class="card__button-buy--form text-decoration-none text-black border-2 border"
+                    ><strong>BUY NOW</strong></a
+                  >
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 3.png"
                   class="card-img-top"
@@ -656,7 +672,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 4.png"
                   class="card-img-top"
@@ -674,7 +690,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 5.png"
                   class="card-img-top"
@@ -692,7 +708,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 6.png"
                   class="card-img-top"
@@ -700,14 +716,14 @@
                   width="200"
                   height="250"
                 />
-                <div class="card-body">
+                <div class="card-body pt-4">
                   <p class="card-text">TORY DESC CALENDAR</p>
+                  <span class="card__span--size">$ 410.99</span>
                 </div>
-                <span>$ 410.99</span>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card">
+              <div class="card border-0 rounded-3">
                 <img
                   src="/images/section-2/mobile/Layer 7.png"
                   class="card-img-top"
@@ -725,17 +741,22 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="carousel__card">
-                <p class="card-text">
-                  My Dragon are misbehaving again Unbelieveable!
-                </p>
-                <img
-                  src="/images/section-2/mobile/Layer 150.png"
-                  alt="Layer-150"
-                  width="30"
-                  height="30"
-                />
-                <span>5H AGO </span>
+              <div
+                class="carousel__card border-0 rounded-3 d-flex align-items-end"
+              >
+                <div class="card__text-container">
+                  <p class="card-text text-white">
+                    My Dragon are misbehaving again Unbelieveable!
+                  </p>
+                  <img
+                    src="/images/section-2/mobile/Layer 150.png"
+                    alt="Layer-150"
+                    width="25"
+                    height="30"
+                    class="m-1 mb-4"
+                  />
+                  <span class="text-white">5H AGO </span>
+                </div>
               </div>
             </div>
           </div>
@@ -752,55 +773,72 @@
           </p>
         </div>
       </section>
-      <section class="container-fluid p-3">
-        <div class="d-flex">
-          <img
-            src="/images/section-4/mobile/Delivery Packages.png"
-            alt="Delivery"
-          />
-          <div>
-            <h1>FOCUS</h1>
-            <p>
+      <section class="info-section container-fluid p-3">
+        <div class="d-flex pt-3">
+          <div class="w-50 ps-4 pt-4">
+            <img
+              src="/images/section-4/mobile/Delivery Packages.png"
+              alt="Delivery"
+              width="68"
+              height="80"
+            />
+          </div>
+          <div class="w-50">
+            <h1 class="info-section__header--size">FOCUS</h1>
+            <p class="info-section__text--size text-secondary">
               Our unwavering focus on superior service delivery and building
               next generation com-patencies
             </p>
           </div>
         </div>
-        <div class="d-flex">
-          <div>
-            <h1>METHOD</h1>
-            <p>
+        <div class="d-flex pt-4">
+          <div class="w-50">
+            <h1 class="info-section__header--size">METHOD</h1>
+            <p class="info-section__text--size text-secondary">
               A standardized methodology designet to deliver measurable business
               result and predictable costs
             </p>
           </div>
-          <img
-            src="/images/section-4/mobile/Triangular Arrows.png"
-            alt="Triangular"
-          />
+          <div class="w-50 ps-4 pt-4">
+            <img
+              src="/images/section-4/mobile/Triangular Arrows.png"
+              alt="Triangular"
+              width="70"
+              height="70"
+            />
+          </div>
         </div>
-        <div class="d-flex">
-          <img src="/images/section-4/mobile/Clipboard.png" alt="Clipboard" />
-          <div>
-            <h1>KNOWLEDGE</h1>
-            <p>
+        <div class="d-flex pt-4">
+          <div class="w-50 ps-4 pt-4">
+            <img
+              src="/images/section-4/mobile/Clipboard.png"
+              alt="Clipboard"
+              width="68"
+              height="80"
+            />
+          </div>
+          <div class="w-50">
+            <h1 class="info-section__header--size">KNOWLEDGE</h1>
+            <p class="info-section__text--size text-secondary">
               A highly skilled, proactive workforce that reliably improves each
               client's ROI while mitigating their business risk
             </p>
           </div>
         </div>
       </section>
-      <section class="mb-4">
-        <p>&#169; Copyring <span>2019</span>.<br />All Rights Reserved</p>
+      <section class="mb-4 bottom-accordion p-3">
+        <p class="">
+          &#169; Copyring <span>2019</span>.<br />All Rights Reserved
+        </p>
         <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
+          <div class="bottom-accordion__item accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button collapsed"
+                class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
+                aria-expanded="true"
                 aria-controls="flush-collapseOne"
               >
                 CONTACT
@@ -808,25 +846,25 @@
             </h2>
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse"
+              class="accordion-collapse collapse show"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body p-0">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item py-2">
                     Headquarters: <br />
                     5600, Blvd. des Galeries, Bur 530 <br />
                     Québec, Québec G2K 2H6
                   </li>
-                  <li>
+                  <li class="py-2">
                     <a
                       href="mailto:contact@osf-global.com"
                       class="text-decoration-none text-dark"
                       >contact@osf-global.com</a
                     >
                   </li>
-                  <li>
+                  <li class="py-2">
                     <a
                       href="tel:+1(888)5484344"
                       class="text-decoration-none text-dark"
@@ -838,10 +876,10 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="bottom-accordion__item accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button
-                class="accordion-button collapsed"
+                class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
@@ -857,9 +895,9 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body p-0">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -868,7 +906,7 @@
                       Alcohol</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -876,7 +914,7 @@
                       >Art</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -884,7 +922,7 @@
                       >Books</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -892,7 +930,7 @@
                       >Drink</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -900,7 +938,7 @@
                       >Electronics</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -908,7 +946,7 @@
                       >Home</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -916,12 +954,12 @@
                       >Jewerly</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a href="#" class="text-decoration-none text-dark"
                       >Kids & Baby</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -929,7 +967,7 @@
                       >Men's Fashion</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -937,7 +975,7 @@
                       >Mobile</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -945,7 +983,7 @@
                       >Motorcycles</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -953,7 +991,7 @@
                       >Movies</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -961,7 +999,7 @@
                       >Music</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -969,7 +1007,7 @@
                       >Sport</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -977,7 +1015,7 @@
                       >Toys</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -985,7 +1023,7 @@
                       >Travel</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -997,10 +1035,10 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="bottom-accordion__item accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button
-                class="accordion-button collapsed"
+                class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseThree"
@@ -1016,9 +1054,9 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body p-0">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -1026,7 +1064,7 @@
                       >About us</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -1034,7 +1072,7 @@
                       >Delivery</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -1042,7 +1080,7 @@
                       >Testimonials</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item py-1">
                     <a
                       href="#"
                       target="_blank"
@@ -1059,28 +1097,28 @@
           <a
             href="https://uk-ua.facebook.com/"
             target="_blank"
-            class="text-decoration-none"
+            class="text-decoration-none opacity-50 p-2"
           >
             <img src="/images/section-5/mobile/f.png" alt="facebook"
           /></a>
           <a
             href="https://www.google.com.ua/"
             target="_blank"
-            class="text-decoration-none"
+            class="text-decoration-none opacity-50 p-2"
           >
             <img src="/images/section-5/mobile/g+.png" alt="google" />
           </a>
           <a
             href="https://twitter.com/?lang=uk"
             target="_blank"
-            class="text-decoration-none"
+            class="text-decoration-none opacity-50 p-2"
           >
             <img src="/images/section-5/mobile/t.png" alt="twiter" />
           </a>
           <a
             href="https://www.pinterest.com/"
             target="_blank"
-            class="text-decoration-none"
+            class="text-decoration-none opacity-50 p-2"
           >
             <img src="/images/section-5/mobile/p.png" alt="pinterest" />
           </a>
@@ -1091,14 +1129,14 @@
       <div
         class="footer container-fluid d-sm-none d-md-none d-lg-none fixed-bottom"
       >
-        <ul class="nav justify-content-evenly">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
             <a href="#" class="nav-link py-3">
               <img
                 src="/images/footer/Search Information.png"
                 alt="Search"
-                width="24"
-                height="24"
+                width="25"
+                height="25"
             /></a>
           </li>
           <li class="nav-item">
@@ -1106,8 +1144,8 @@
               <img
                 src="/images/footer/Profile User.png"
                 alt="Profile"
-                width="24"
-                height="24"
+                width="25"
+                height="25"
             /></a>
           </li>
           <li class="nav-item">
@@ -1115,13 +1153,10 @@
               <img
                 src="/images/footer/Heart Outline.png"
                 alt="Heart"
-                width="23"
-                height="26"
+                width="25"
+                height="25"
               />
-              <span
-                class="text-white fw-bold border-1 border border-white rounded-3"
-                >1</span
-              ></a
+              <sup class="footer__index">1</sup></a
             >
           </li>
           <li class="nav-item">
@@ -1129,13 +1164,10 @@
               <img
                 src="/images/footer/Bag For Shopping.png"
                 alt="Bag"
-                width="24"
-                height="27"
+                width="25"
+                height="25"
               />
-              <span
-                class="text-white fw-bold border-1 border border-white rounded-3"
-                >2</span
-              ></a
+              <sup class="footer__index">2</sup></a
             >
           </li>
         </ul>

@@ -8,7 +8,7 @@
 }
 .accordion__item--bg:not(.collapsed),
 .accordion__item--bg {
-  background-color: #262a32;
+  background: #262a32;
 }
 .accordion-item--height {
   height: 500px;
@@ -80,12 +80,12 @@
 .discounts__header {
   font-size: 18px;
   color: #45413e;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .discounts__text {
   font-size: 13px;
   color: #45413e;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .discounts__button {
   padding: 5px 20px 5px 20px;
@@ -93,21 +93,100 @@
 /* Second section */
 .carousel__card {
   background-image: url(/images/section-2/mobile/Layer\ 8.png);
-  height: 372px;
+  height: 365px;
   background-size: cover;
   background-position-x: right;
+}
+.card-items {
+  height: 510px;
+  background: #262a32;
+}
+.card {
+  height: 365px;
+}
+.card__span--size {
+  font-size: 14px;
+}
+.card__button-buy--form {
+  border-radius: 0 15px 15px 0;
+  margin-left: -6px;
+  padding: 5px 10px 5px 5px;
+}
+.card__button-price--form {
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px 0px 0px 15px;
+}
+.card__text-container {
+  text-align: start;
+  padding: 20px;
+  width: 70%;
+  font-size: 16px;
+}
+.card-items__header {
+  font-size: 18px;
+}
+.card-items__header--underline {
+  border: black;
 }
 /* Third section */
 .banner {
   background-image: url(/images/section-3/mobile/Layer\ 148.png);
   background-size: cover;
-  height: 180px;
+  height: 185px;
   width: 100%;
   background-position: center;
 }
+.banner__header {
+  font-size: 30px;
+}
+.banner__text {
+  font-size: 14px;
+}
 /* Forth section */
+.info-section {
+  height: 575px;
+  background-color: #45413d;
+  color: white;
+}
+.info-section__header--size {
+  font-size: 18px;
+}
+.info-section__text--size {
+  font-size: 14px;
+}
+/* fifth section */
+
+.bottom-accordion {
+  font-size: 13px;
+  height: 400px;
+}
+.bottom-accordion__item {
+  border: none;
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+.accordion-button:not(.collapsed) {
+  color: #262a32;
+  /* background-color: white; */
+}
+.bottom-accordion__button {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 /* Footer */
 .footer {
   height: 55px;
   background: #262a32;
+}
+.footer__index {
+  border: 2px solid #82b921;
+  border-radius: 50%;
+  padding: 0px 4px 0px 4px;
+  color: #82b921;
+  font-size: 12px;
+  font-weight: bolder;
+  right: 12px;
+  top: -9px;
+  background-color: #262a32;
 }
