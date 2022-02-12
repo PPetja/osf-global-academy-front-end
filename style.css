@@ -11,7 +11,7 @@
   background: #262a32;
 }
 .accordion-item--height {
-  height: 500px;
+  height: 555px;
 }
 
 /* First section */
@@ -95,22 +95,20 @@
   background-image: url(/images/section-2/mobile/Layer\ 8.png);
   height: 365px;
   background-size: cover;
-  background-position-x: right;
+  background-position-x: -120px;
   opacity: 0.3;
 }
 .card__text-container {
   text-align: start;
   padding: 20px;
-  width: 70%;
+  width: 65%;
   font-size: 16px;
   margin-top: -186px;
+  font-weight: bold;
 }
 .card-items {
   height: 510px;
   background: #262a32;
-}
-.card {
-  height: 365px;
 }
 .card__span--size {
   font-size: 14px;
@@ -132,31 +130,41 @@
   border: black;
 }
 .card__special--pink {
-  background-color: #c8648a;
+  background: linear-gradient(
+    9deg,
+    rgba(112, 101, 151, 1) 0%,
+    rgba(196, 96, 134, 1) 100%
+  );
+  height: 365px;
 }
 /* rules for hover effect */
 .card__hover-items {
   justify-content: space-evenly;
   margin-top: -250px;
-  margin-bottom: 172px;
+  margin-bottom: 115px;
   padding: 0 10px 0 10px;
   opacity: 0;
 }
 .card {
+  height: 365px;
   opacity: 1;
   z-index: 1;
 }
 .card__hover-btn {
   z-index: 5;
 }
-.carousel-item:hover .card {
+.carousel-item--bg:hover .card {
   opacity: 0.3;
 }
-.carousel-item:hover .card__hover-items {
+.carousel-item--bg:hover .card__hover-items {
   opacity: 1;
 }
 .carousel-item--bg:hover {
-  background-color: #33c87a;
+  background: linear-gradient(
+    9deg,
+    rgba(50, 199, 119, 1) 0%,
+    rgba(66, 215, 169, 1) 100%
+  );
 }
 /* Third section */
 .banner {
