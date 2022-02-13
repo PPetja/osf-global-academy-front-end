@@ -1,4 +1,4 @@
-/* Header */
+/* Top navigation */
 .navigation {
   height: 60px;
   padding: 0;
@@ -15,6 +15,16 @@
 }
 .accordion-item--height {
   height: 900px;
+}
+.navigation__logo-text {
+  display: none;
+  padding-left: 10px;
+}
+.nav__img--filter {
+  filter: invert(1);
+}
+.navigation__brand {
+  width: 50%;
 }
 
 /* First section */
@@ -42,7 +52,7 @@
   background-position-x: right;
   background-color: currentcolor;
 }
-.discounts {
+.discounts__container {
   background-image: url(/images/section-1/mobile/Holidays.\ Attribute\ as\ Freepik\ from\ Flaticon.com.png);
   background-color: #84bc22;
   background-repeat: no-repeat;
@@ -65,6 +75,7 @@
   font-size: 14px;
   border: 2px solid #8e9092;
   padding: 5px 25px 5px 25px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .carousel-indicators [data-bs-target] {
   height: 10px;
@@ -128,6 +139,7 @@
 
 .card-items__header {
   font-size: 18px;
+  width: 50%;
 }
 .card-items__header--underline {
   border: black;
@@ -231,15 +243,80 @@
   top: -9px;
   background-color: #262a32;
 }
-
+.card-items__header-line {
+  width: 25%;
+}
 @media only screen and (min-width: 768px) {
+  /* top navigation */
+  .navigation {
+    height: 60px;
+  }
   .accordion__img {
     height: 450px;
   }
+  .navigation__logo-text {
+    display: block;
+  }
+  .navigation__logo-text-top {
+    color: #011847;
+    font-size: 25px;
+  }
+  .navigation__logo-text-bottom {
+    font-size: 12px;
+    color: #84bc22;
+    margin-top: -10px;
+  }
+  .footer__index {
+    background-color: white;
+  }
+  .navigation__brand {
+    width: auto;
+  }
+  .nav__item-heart {
+    margin-right: -22px;
+  }
+  .navigation__link,
+  .navigation__link:visited {
+    color: black;
+    background-color: white;
+  }
+  .navigation__link:hover {
+    background: #262a32;
+    color: white;
+    border-bottom: 2px solid #84bc22;
+  }
+  /* first section */
+  .carousel {
+    width: 70%;
+  }
+  .discount {
+    width: 30%;
+  }
+  .carousel-indicators {
+    bottom: 15px;
+  }
+  .discounts__text {
+    margin-bottom: 15px;
+  }
+  .discounts__header {
+    margin-top: 20px;
+  }
+  .card-items__header-line {
+    width: 60%;
+  }
+  .card-items__header {
+    width: 40%;
+  }
 }
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: none;
-    flex-basis: auto;
+
+@media only screen and (min-width: 1280px) {
+  .navigation__logo-text-top {
+    font-size: 32px;
+  }
+  .navigation__logo-text-bottom {
+    font-size: 18px;
+  }
+  .navigation {
+    height: 80px;
   }
 }
