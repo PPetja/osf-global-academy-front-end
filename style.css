@@ -10,8 +10,11 @@
 .accordion__item--bg {
   background: #262a32;
 }
+.accordion__img {
+  width: 70%;
+}
 .accordion-item--height {
-  height: 555px;
+  height: 900px;
 }
 
 /* First section */
@@ -227,4 +230,16 @@
   right: 12px;
   top: -9px;
   background-color: #262a32;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion__img {
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none;
+    flex-basis: auto;
+  }
 }
