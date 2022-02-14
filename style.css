@@ -1,4 +1,4 @@
-/* Top navigation */
+/* top navigation */
 .navigation {
   height: 60px;
   padding: 0;
@@ -27,14 +27,9 @@
   width: 50%;
 }
 
-/* First section */
-.carousel__middle {
-  background-image: url(/images/section-1/mobile/Layer\ 149.png);
-  width: 100%;
-  height: 470px;
-  background-size: cover;
-  background-position-x: right;
-  background-color: currentcolor;
+/* first section */
+.navigation__right-basket-item {
+  display: none;
 }
 .carousel__start {
   background-image: url(/images/section-1/mobile/Layer\ 3.png);
@@ -44,8 +39,16 @@
   background-position-x: right;
   background-color: currentcolor;
 }
-.carousel__end {
+.carousel__middle {
   background-image: url(/images/section-1/mobile/Layer\ 149.png);
+  width: 100%;
+  height: 470px;
+  background-size: cover;
+  background-position-x: right;
+  background-color: currentcolor;
+}
+.carousel__end {
+  background-image: url(/images/section-1/mobile/first\ section\ cerousell\ 3.jpg);
   width: 100%;
   height: 470px;
   background-size: cover;
@@ -104,7 +107,7 @@
 .discounts__button {
   padding: 5px 20px 5px 20px;
 }
-/* Second section */
+/* second section */
 .card__special {
   background-image: url(/images/section-2/mobile/Layer\ 8.png);
   height: 365px;
@@ -168,20 +171,20 @@
 .card__hover-btn {
   z-index: 5;
 }
-.carousel-item--bg:hover .card {
+.card-item--bg:hover .card {
   opacity: 0.3;
 }
-.carousel-item--bg:hover .card__hover-items {
+.card-item--bg:hover .card__hover-items {
   opacity: 1;
 }
-.carousel-item--bg:hover {
+.card-item--bg:hover {
   background: linear-gradient(
     9deg,
     rgba(50, 199, 119, 1) 0%,
     rgba(66, 215, 169, 1) 100%
   );
 }
-/* Third section */
+/* third section */
 .banner {
   background-image: url(/images/section-3/mobile/Layer\ 148.png);
   background-size: cover;
@@ -195,7 +198,7 @@
 .banner__text {
   font-size: 14px;
 }
-/* Forth section */
+/* forth section */
 .info-section {
   height: 575px;
   background-color: #45413d;
@@ -227,7 +230,7 @@
   font-weight: 600;
   margin-bottom: 5px;
 }
-/* Footer */
+/* footer */
 .footer {
   height: 55px;
   background: #262a32;
@@ -286,12 +289,18 @@
     border-bottom: 2px solid #84bc22;
   }
   /* first section */
+  .carousel__start {
+    background-image: url(/images/section-1/desktop/Layer\ 3.png);
+    background-position-x: center;
+  }
   .carousel {
     width: 70%;
   }
   .discount {
     width: 30%;
+    margin-top: 0;
   }
+  /* second setion */
   .carousel-indicators {
     bottom: 15px;
   }
@@ -304,12 +313,28 @@
   .card-items__header-line {
     width: 60%;
   }
-  .card-items__header {
+  .card-items__header,
+  .card__container--width {
     width: 40%;
+  }
+  /* third section */
+  .banner {
+    background-image: url(/images/section-3/desctop/Layer\ 148.png);
+    height: 400px;
+    margin-top: -16px;
+  }
+  .banner__header {
+    font-size: 40px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .footer {
+    display: none;
+  }
+  .navigation__right-basket-item {
+    display: flex;
+  }
   .navigation__logo-text-top {
     font-size: 32px;
   }
@@ -318,5 +343,16 @@
   }
   .navigation {
     height: 80px;
+  }
+  /* second section */
+  .card__container--width {
+    width: 22%;
+  }
+  /* third section */
+  .banner {
+    height: 520px;
+  }
+  .banner__header {
+    font-size: 48px;
   }
 }
