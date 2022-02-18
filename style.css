@@ -344,8 +344,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer {
-    display: none;
+  .navigation__button-icon {
+    height: 60px;
+    width: 60px;
   }
   .navigation__right-basket-item {
     display: flex;
@@ -369,5 +370,22 @@
   }
   .banner__header {
     font-size: 48px;
+  }
+  /* footer */
+  .footer {
+    display: none;
+  }
+  .navigation__link {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .navigation__header-link {
+    width: 70%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .navigation__header-container {
+    padding: 0 17px 0 17px;
   }
 }
