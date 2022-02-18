@@ -63,7 +63,7 @@
   height: 335px;
 }
 .slider-top {
-  margin-top: 85px;
+  margin-top: 100px;
 }
 .slider-top__header {
   font-size: 28px;
@@ -344,6 +344,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  /* top navigation */
   .navigation__button-icon {
     height: 60px;
     width: 60px;
@@ -359,6 +360,25 @@
   }
   .navigation {
     height: 80px;
+  }
+  /* first section */
+  .carousel {
+    width: 75%;
+  }
+  .discount {
+    width: 25%;
+    margin-top: 0;
+  }
+  .discounts__container {
+    height: 400px;
+  }
+  .carousel__start,
+  .carousel__middle,
+  .carousel__end {
+    height: 545px;
+  }
+  .carousel-indicators {
+    bottom: 0;
   }
   /* second section */
   .card__container--width {
