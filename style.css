@@ -200,7 +200,7 @@
 }
 /* forth section */
 .info-section {
-  height: 575px;
+  height: auto;
   background-color: #45413d;
   color: white;
 }
@@ -210,6 +210,11 @@
 .info-section__text--size {
   font-size: 14px;
 }
+.info-section__img,
+.info-section__text {
+  width: 50%;
+}
+
 /* fifth section */
 
 .bottom-accordion {
@@ -325,6 +330,16 @@
   }
   .banner__header {
     font-size: 40px;
+  }
+  /* fifth section */
+  .info-section {
+    height: auto;
+  }
+  .info-section__img {
+    width: 25%;
+  }
+  .info-section__text {
+    width: 75%;
   }
 }
 
