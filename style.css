@@ -384,6 +384,13 @@
   .card__container--width {
     width: 22%;
   }
+  .card__button-load-more {
+    background: none;
+    border: 2px solid black;
+    filter: invert(1);
+    width: 25%;
+    padding-left: 100px;
+  }
   /* third section */
   .banner {
     height: 445px;
