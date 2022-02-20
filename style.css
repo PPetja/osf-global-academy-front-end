@@ -239,8 +239,8 @@
   height: 55px;
   background: #262a32;
 }
-/* counter footer */
-.footer__index {
+
+.footer__counter, .navigation__counter{
   border: 2px solid #82b921;
   border-radius: 50%;
   padding: 0px 4px 0px 4px;
@@ -279,7 +279,7 @@
     color: #84bc22;
     margin-top: -10px;
   }
-  .footer__index {
+  .footer__counter, .navigation__counter {
     background-color: white;
   }
   .navigation__brand {

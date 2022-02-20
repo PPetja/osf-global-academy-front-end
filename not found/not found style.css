@@ -1,0 +1,47 @@
+.content{
+    margin-top: 60px;
+    background-color: #f1edea;
+    height: auto;
+}
+.content__previous-page{
+    color: #82b921;
+}
+.content__header{
+    font-size: 48px;
+    font-weight: 500;
+}
+.content__warning{
+    font-size: 120px;
+    color: #82b921;
+}
+.content__field{
+    border-radius: 40px;
+    border: 2px solid #f1edea;
+    background-image: url(/images/not_found/search.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    margin: 20px 0 35px 0;
+}
+.conteiner__home-link{
+    color: #82b921;
+    font-style: 500;
+}
+.content__background-image{
+    background-image: url(/images/not_found/Exclamation.png);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position-x: -60px;
+    background-position-y: center;
+}
+.content__middle-box{
+    opacity: 93%;
+}
+
+@media only screen and (min-width: 768px) {
+    .content__warning{
+    margin-bottom: 70px;
+    letter-spacing: 5px;
+    }
+}
