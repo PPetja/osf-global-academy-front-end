@@ -384,6 +384,14 @@
   .navigation__header-container {
     padding: 0 17px 0 17px;
   }
+  .navigation__container-dropdown{
+    height: auto;
+    padding-top: 30px;
+  }
+  .navigation__dropdown-img{
+    width: 250px;
+    height: 250px;
+  }
 
   /* first section */
 
@@ -449,6 +457,13 @@
   font-size: 20px;
   font-weight: bolder;
   margin-bottom: 12px;
+}
+.featured-section__card-text{
+  font-size: 16px;
+}
+.featured-section__card-span {
+  font-size: 14px;
+  color: #82b921;
 }
   /* fifth section */
 
