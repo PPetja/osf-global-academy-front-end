@@ -1,0 +1,29 @@
+.content{
+    margin-top: 60px;
+    background-color: #f1edea;
+    height: auto;
+}
+.content__previous-page{
+    color: #82b921;
+}
+.content__header{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* first section */
+.content__subscribe-header{
+    color: #82b921;
+}
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+.form-check-input:focus {
+    /* border-color: black; */
+    outline: 0;
+    box-shadow: none;
+}
+.form-check-input:checked[type=radio] {
+    background-image: none;
+    outline: 2px solid black;
+}
