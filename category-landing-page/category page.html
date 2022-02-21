@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/category-landing-page/category-landing style.css" />
+    <link rel="stylesheet" href="/category-landing-page/category style.css" />
     </head>
     <body>
         <header>
@@ -20,7 +20,7 @@
                 </button>
 
                 <a class="navigation__brand navbar-brand d-flex navigation__button-home p-md-1 p-xl-3 mt-xl-3 pt-md-0 mt-1"
-                    href="#">
+                    href="/index.html">
                     <img src="/images/header/logo.png" alt="logo" width="46" height="46"
                         class="navigation__button-icon ms-md-3" />
                     <div class="navigation__logo-text">
@@ -407,13 +407,14 @@
                   </nav>
                   <div class="content__header text-center d-flex justify-content-center">
                     <div class="w-50 border-bottom border-2 border-black mb-3"></div>
-                    <p class="m-0 px-3">Services</p>
+                    <p class="m-0 px-3"><strong>Services</strong></p>
                     <div class="w-50 border-bottom border-2 border-black mb-3"></div>
                   </div>
                   <a href="#" class="content__subscribe-header text-decoration-none my-3">Hide Filter</a>
-                  <div class="bg-white w-100 px-3 rounded-3">
+                  <div class="d-md-flex justify-content-md-between justify-content-lg-around py-md-3 bg-white w-100 px-3 rounded-3">
+                <div>
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25">Price</label>
+                        <label for="cars" class="w-25 me-lg-4">Price</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="$0-100">$0.00 - $100.00</option>
                             <option value="$100-200">$100.00 - $200.00</option>
@@ -422,7 +423,7 @@
                         </select>
                     </form>
                     <div class="d-flex justify-content-around mt-3">
-                        <label for="radio" class="w-25">Color</label>
+                        <label for="radio" class="w-25 me-lg-4">Color</label>
                         <div class="w-75 d-flex">
                         <div class="form-check" name="radio">
                             <input class="form-check-input bg-light" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -450,8 +451,10 @@
                         </div>
                         </div>
                     </div>
+                </div>
+                 <div>
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25">Brands</label>
+                        <label for="cars" class="w-25 me-lg-4">Brands</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="ukraine sport">Ukraine sport</option>
                             <option value="english sport">English sport</option>
@@ -460,7 +463,7 @@
                         </select>
                     </form>
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25">Sort by</label>
+                        <label for="cars" class="w-25 me-lg-3">Sort by</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="price">Price</option>
                             <option value="color">Color</option>
@@ -468,8 +471,10 @@
                             <option value="Size">Size</option>
                         </select>
                     </form>
+                </div>
+                 <div>
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25">Size</label>
+                        <label for="cars" class="w-25 me-lg-4">Size</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
@@ -477,15 +482,16 @@
                             <option value="extra large">Extra large</option>
                         </select>
                     </form>
-                    <form action="#" class="d-flex justify-content-around mt-3 pb-3">
-                        <label for="cars" class="w-25">Show</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
+                    <form action="#" class="d-flex justify-content-around mt-3 pb-3 pb-md-0">
+                        <label for="cars" class="w-25 me-lg-4">Show</label>
+                        <select name="cars" id="cars" class="w-75 rounded-pill px-1 py-1 border-2 border-secondary text-secondary">
                             <option value="16 per page">16 per page</option>
                             <option value="20 per page">20 per page</option>
                             <option value="24 per page">24 per page</option>
                             <option value="28 per page">28 per page</option>
                         </select>
                     </form>
+                </div>
                   </div>
                 </div>
                 <div>
@@ -540,6 +546,123 @@
                 </div>
                 </div>
                 </div>
+            </section>
+            <section class="featured-section px-3">
+                    <h1 class="text-center text-white pt-5">Featured Products</h1>
+                    <p class="text-center text-white">Unde omnis iste errror sit voluptatem</p>
+                    <div class="text-white text-center d-flex justify-content-center mb-3">
+                        <p class="border-bottom border-2 w-25 mb-4"></p>
+                        <p class="featured-section__middle-control-symbol px-3">///</p>
+                        <p class="border-bottom border-2 w-25 mb-4"></p>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-tex">Kristina Dam Oak Table <br> With Wite Marble
+                                            </p>
+                                            <span class="featured-section__card-span">Awesome</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
+                                                Marble</p>
+                                            <span class="featured-section__card-span">Marketing</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
+                                                Marble</p>
+                                            <span class="featured-section__card-span">Awesome</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
+                                            <span class="featured-section__card-span">Marketing</span>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
+                                            <span class="featured-section__card-span">Marketing</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
+                                                Marble</p>
+                                            <span class="featured-section__card-span">Awesome</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
+                                                Marble</p>
+                                            <span class="featured-section__card-span">Marketing</span>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                        <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
+                                            width="270" height="190">
+                                        <div class="card-body">
+                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
+                                                Marble</p>
+                                            <span class="featured-section__card-span">Awesome</span>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-section__left-row carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="featured-section__right-row carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>                
             </section>
             <section class=" mb-4 bottom-accordion p-3">
             <p class="d-xl-none d-md-none d-lg-none">
