@@ -1,3 +1,6 @@
-const showCardButton = document.querySelector('.card__button-load-more');
-showCardButton.addEventListener("click", function(event){
-})
+const showCardButton = document.querySelector('.content__button-show-more');
+const visibleCard = document.querySelector('.content__hover-card');
+showCardButton.addEventListener("click", function (event) {
+    visibleCard.style.display = 'block';
+    showCardButton.style.display = 'none';
+});

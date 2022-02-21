@@ -188,7 +188,7 @@ color: white;
 .card-background:hover .card {
   opacity: 0.3;
 }
-.card-background:hover .card__hover-items {
+.card-background:hover .card__hxover-items {
   opacity: 1;
 }
 .card-background:hover {

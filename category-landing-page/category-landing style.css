@@ -27,3 +27,18 @@
     background-image: none;
     outline: 2px solid black;
 }
+.content__button-show-more{
+    background-color: #82b921;
+    color: white;
+    border: 1px solid #82b921;
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+}
+.content__button-show-more:hover{
+    background-color: white;
+    color: #82b921;
+}
+.content__hover-card{
+    display: none;
+}
