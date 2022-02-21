@@ -412,9 +412,9 @@
                   </div>
                   <a href="#" class="content__subscribe-header text-decoration-none my-3">Hide Filter</a>
                   <div class="d-md-flex justify-content-md-between justify-content-lg-around py-md-3 bg-white w-100 px-3 rounded-3">
-                <div>
+                <div class="content__filter-box">
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-lg-4">Price</label>
+                        <label for="cars" class="w-25 me-md-2 me-lg-4">Price</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="$0-100">$0.00 - $100.00</option>
                             <option value="$100-200">$100.00 - $200.00</option>
@@ -423,38 +423,38 @@
                         </select>
                     </form>
                     <div class="d-flex justify-content-around mt-3">
-                        <label for="radio" class="w-25 me-lg-4">Color</label>
+                        <label for="radio" class="w-25 me-md-2 me-lg-4">Color</label>
                         <div class="w-75 d-flex">
                         <div class="form-check" name="radio">
-                            <input class="form-check-input bg-light" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input bg-light" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-success" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-success" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-warning" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-warning" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </div>
                         </div>
                     </div>
                 </div>
-                 <div>
+                 <div class="content__filter-box">
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-lg-4">Brands</label>
+                        <label for="cars" class="w-25 me-md-2 me-lg-4">Brands</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="ukraine sport">Ukraine sport</option>
                             <option value="english sport">English sport</option>
@@ -463,7 +463,7 @@
                         </select>
                     </form>
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-lg-3">Sort by</label>
+                        <label for="cars" class="w-25 me-md-1 me-lg-3">Sort by</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="price">Price</option>
                             <option value="color">Color</option>
@@ -472,9 +472,9 @@
                         </select>
                     </form>
                 </div>
-                 <div>
+                 <div class="content__filter-box">
                     <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-lg-4">Size</label>
+                        <label for="cars" class="w-25 me-md-2 me-lg-4">Size</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
@@ -483,7 +483,7 @@
                         </select>
                     </form>
                     <form action="#" class="d-flex justify-content-around mt-3 pb-3 pb-md-0">
-                        <label for="cars" class="w-25 me-lg-4">Show</label>
+                        <label for="cars" class="w-25 me-md-2 me-lg-4">Show</label>
                         <select name="cars" id="cars" class="w-75 rounded-pill px-1 py-1 border-2 border-secondary text-secondary">
                             <option value="16 per page">16 per page</option>
                             <option value="20 per page">20 per page</option>
@@ -496,58 +496,153 @@
                 </div>
                 <div>
                 <p class="text-center text-secondary my-3 "><span> <strong>12,931</strong></span> result in apparel</p>
-                <div>
-                    <div class="card w-auto mb-3 rounded-3">
-                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" alt="Layer 1">
+                <div class="d-lg-flex">
+                    <div class="d-md-flex justify-content-md-around">
+                    <div class="card mb-3 rounded-3 me-lg-3">
+                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" alt="Layer 1" height="260">
                         <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p> <br>
+                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
                             <p class="text-secondary text-center">$ 799.55</p>
-                            
                         </div>
                     </div>
-                    <div class="card w-auto mb-3 rounded-3" >
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" alt="Layer 12">
+                    <div class="card mb-3 rounded-3 mx-lg-3" >
+                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" alt="Layer 12" height="260">
                         <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p> <br>
+                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                             <p class="text-secondary text-center">$ 659.55</p>
                         </div>
                     </div>
-                    <div class="card w-auto mb-3 rounded-3">
-                        <img src="/images/category landing page/Layer 5.png" class="card-img-top" alt="Layer 5">
+                    </div>
+                    <div class="d-md-flex justify-content-md-around">
+                    <div class="card mb-3 rounded-3 mx-lg-3">
+                        <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260" alt="Layer 5">
                         <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p> <br>
+                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
                             <p class="text-secondary text-center">$ 2195.00</p>
                         </div>
                     </div>
-                    <div class="card w-auto rounded-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black alt="layer 12">
+                    <div class="card mb-3 rounded-3 ms-lg-3">
+                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="layer 12">
                         <div class="card-body">
-                             <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p> <br>
+                             <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                              <p class="text-secondary text-center">$ 659.55</p>
                         </div>
                     </div>
-                    <button tabindex="0" class="content__button-show-more rounded-pill my-5">LOAD MORE</button>                    
-                 <div class="content__hover-card mt-3">
-                    <div class="card w-auto mb-3 rounded-3">
-                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" alt="Layer 1">
+                 </div>
+                </div>
+                <div class="d-lg-flex">
+                <div class="d-md-flex justify-content-md-around">
+                    <div class="card mb-3 rounded-3 me-lg-3">
+                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
                         <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p> <br>
+                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
                             <p class="text-secondary text-center">$ 799.55</p>
-                    
                         </div>
                     </div>
-                    <div class="card w-auto mb-3 rounded-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" alt="Layer 12">
+                    <div class="card mb-3 rounded-3 mx-lg-3">
+                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
                         <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p> <br>
+                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                             <p class="text-secondary text-center">$ 659.55</p>
                         </div>
                     </div>
                 </div>
+                <div class="d-md-flex justify-content-md-around">
+                    <div class="card mb-3 rounded-3 mx-lg-3">
+                        <img src="/images/category landing page/Layer 5.png" class="card-img-top"  height="260" alt="Layer 5">
+                        <div class="card-body">
+                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                            <p class="text-secondary text-center">$ 2195.00</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-3 ms-lg-3">
+                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt=" layer 12">
+                        <div class="card-body">
+                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                            <p class="text-secondary text-center">$ 659.55</p>
+                        </div>
+                    </div>
+                 </div>
                 </div>
+                <div class="d-none d-lg-flex">
+                    <div class="d-lg-flex">
+                        <div class="d-md-flex justify-content-md-around">
+                            <div class="card mb-3 rounded-3 me-lg-3">
+                                <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                    <p class="text-secondary text-center">$ 799.55</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 rounded-3 mx-lg-3">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260"
+                                    alt="Layer 12">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                    <p class="text-secondary text-center">$ 659.55</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-md-around">
+                            <div class="card mb-3 rounded-3 mx-lg-3">
+                                <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260" alt="Layer 5">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                    <p class="text-secondary text-center">$ 2195.00</p>
+                                </div>
+                            </div>
+                            <div class="card rounded-3 ms-lg-3">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260"
+                                    alt=" layer 12">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                    <p class="text-secondary text-center">$ 659.55</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="d-flex justify-content-center">
+                <button tabindex="0" class="content__button-show-more rounded-pill my-5">LOAD MORE</button> 
+                </div>
+                 <div class="content__hover-card mt-3">
+                     <div class="d-lg-flex">
+                     <div class="d-md-flex justify-content-md-around" >
+                    <div class="card mb-3 rounded-3 me-lg-3">
+                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
+                        <div class="card-body">
+                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                            <p class="text-secondary text-center">$ 799.55</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3 rounded-3 mx-lg-3">
+                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
+                        <div class="card-body">
+                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                            <p class="text-secondary text-center">$ 659.55</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="content__hover-card mt-3 mt-md-0 d-md-flex justify-content-md-around">
+                        <div class="card mb-3 rounded-3 mx-lg-3">
+                            <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                <p class="text-secondary text-center">$ 799.55</p>
+                            </div>
+                        </div>
+                             <div class="card w-auto mb-3 rounded-3 ms-lg-3">
+                                 <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
+                                 <div class="card-body">
+                                    <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                    <p class="text-secondary text-center mt-1">$ 659.55</p>
+                                </div>
+                             </div>
+                        </div>
+                        </div>
+                    </div>
             </section>
-            <section class="featured-section px-3">
+            <section class="featured-section d-none d-lg-block px-3">
                     <h1 class="text-center text-white pt-5">Featured Products</h1>
                     <p class="text-center text-white">Unde omnis iste errror sit voluptatem</p>
                     <div class="text-white text-center d-flex justify-content-center mb-3">

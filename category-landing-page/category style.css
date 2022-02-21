@@ -31,9 +31,8 @@
     background-color: #82b921;
     color: white;
     border: 1px solid #82b921;
-    width: 60%;
-    height: 40px;
-    margin-left: 20%;
+    width: 200px;
+    height: 45px;
 }
 .content__button-show-more:hover{
     background-color: white;
@@ -41,4 +40,9 @@
 }
 .content__hover-card{
     display: none;
+}
+@media only screen and (min-width: 1280px) {
+.content__filter-box{
+    width: 23%;
+    }
 }
