@@ -11,8 +11,10 @@
     font-weight: 500;
 }
 .content__warning{
-    font-size: 120px;
+    font-size: 500%;
     color: #82b921;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
 }
 .content__field{
     border-radius: 40px;
@@ -40,8 +42,4 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .content__warning{
-    margin-bottom: 70px;
-    letter-spacing: 5px;
-    }
 }

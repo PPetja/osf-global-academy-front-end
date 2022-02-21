@@ -74,6 +74,11 @@
   border: 2px solid #8e9092;
   padding: 5px 25px 5px 25px;
   filter: drop-shadow(2px 4px 6px black);
+  color: white;
+}
+.slider-top__button:hover{
+  background: white;
+  color: black;
 }
 
 
@@ -103,6 +108,13 @@
 }
 .discounts__button {
   padding: 5px 20px 5px 20px;
+  color:  #3a5b96;
+  background-color: white;
+  border: 2px solid #3a5b96;
+}
+.discounts__button:hover{
+background: #3a5b96;
+color: white;
 }
 /* second section */
 .card__special {
@@ -131,10 +143,16 @@
   border-radius: 0 15px 15px 0;
   margin-left: -6px;
   padding: 5px 10px 5px 5px;
+  color: black;
 }
+
 .card__button-price--form {
   padding: 5px 15px 5px 15px;
   border-radius: 15px 0px 0px 15px;
+}
+.card__button-buy--form:hover{
+  color: white;
+  background-color: #84bc22;
 }
 
 .card-items__header {
