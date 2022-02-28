@@ -1,0 +1,92 @@
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  padding: 80px;
+}
+
+.holder::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 80%;
+}
+
+
+.prevContainer,
+.nextContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, calc(-50% - 54px));
+  height: 54px;
+  width: 54px;
+  cursor: pointer;
+}
+
+.prevContainer {
+  margin-left: 26px;
+  left: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.prev {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 34px;
+  width: 32px;
+  float: left;
+  margin-left: 12px
+}
+
+.prev svg,
+.next svg {
+  fill: white;
+}
+
+.nextContainer {
+  margin-right: 26px;
+  right: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: left;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.slide-thumbnail {
+  width: 100%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active,
+.slide-thumbnail:hover {
+  opacity: 1;
+}
