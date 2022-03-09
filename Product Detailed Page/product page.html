@@ -712,71 +712,27 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="container d-flex justify-content-center">
-          <div class="holder">
-            <div class="slides">
-              <img
-                src="/images/product detailed page/large/PG.10216885.JJ169XX.BZ.jpg"
-                height="600"
-              />
-            </div>
-            <div class="slides">
-              <img
-                src="/images/product detailed page/large/PG.10216885.JJ169XX.PZ.jpg"
-                height="600"
-              />
-            </div>
-
-            <div class="slides">
-              <img
-                src="/images/product detailed page/large/PG.10216885.JJ8UTXX.BZ.jpg"
-                height="600"
-              />
-            </div>
-
-            <div class="slides">
-              <img
-                src="/images/product detailed page/large/PG.10216885.JJ8UTXX.PZ.jpg"
-                height="600"
-              />
+      <section> 
+          <div class="wrapper">
+            <header>
+              <h1>Product Image Gallery with Thumbnails</h1>
+              <p>Click on the thumbnail to view it larger on the right!</p>
+            </header>
+            <div class="image-gallery">
+              <aside class="thumbnails">
+                <a href="#" class="selected thumbnail" data-big="http://placekitten.com/420/600">
+                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/420/600)"></div>
+                </a>
+                <a href="#" class="thumbnail" data-big="http://placekitten.com/450/600">
+                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/450/600)"></div>
+                </a>
+                <a href="#" class="thumbnail" data-big="http://placekitten.com/460/700">
+                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/460/700)"></div>
+                </a>
+              </aside>
+              <main class="primary" style="background-image: url('http://placekitten.com/420/600');"></main>
             </div>
           </div>
-          <div class="row d-flex justify-content-evenly">
-            <div class="column">
-              <img
-                class="slide-thumbnail"
-                src="/images/product detailed page/small/PG.10216885.JJ169XX.BZ-small.jpg"
-                onclick="currentSlide(1)"
-                alt="Caption One"
-              />
-            </div>
-            <div class="column">
-              <img
-                class="slide-thumbnail"
-                src="/images/product detailed page/small/PG.10216885.JJ169XX.PZ-small.jpg"
-                onclick="currentSlide(2)"
-                alt="Caption Two"
-              />
-            </div>
-            <div class="column">
-              <img
-                class="slide-thumbnail"
-                src="/images/product detailed page/small/PG.10216885.JJ8UTXX.BZ-small.jpg"
-                onclick="currentSlide(3)"
-                alt="Caption Three"
-              />
-            </div>
-            <div class="column">
-              <img
-                class="slide-thumbnail"
-                src="/images/product detailed page/small/PG.10216885.JJ8UTXX.PZ-small.jpg"
-                onclick="currentSlide(4)"
-                alt="Caption Four"
-              />
-            </div>
-          </div>
-        </div>
       </section>
       <section class="info-section container-fluid p-3 d-md-flex">
         <div class="d-flex pt-3 align-items-center pe-md-2">
@@ -1412,5 +1368,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
