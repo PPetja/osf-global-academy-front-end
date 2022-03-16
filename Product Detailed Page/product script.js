@@ -5,8 +5,8 @@ $(".thumbnail").on("click", function () {
     "background-image",
     "url(" + newSelection + ")"
   );
-  clicked.parent().find(".thumbnail").removeClass("selected");
+  $(".thumbnail").removeClass("selected");
   clicked.addClass("selected");
-  $(".image-section__primary").empty().append($img.hide().fadeIn("lineral"));
+  $(".image-section__primary").append($img.hide().fadeIn("lineral"));
 });
- 
+
