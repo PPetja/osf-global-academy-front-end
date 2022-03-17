@@ -13,7 +13,6 @@
 .breadcrumb__link:hover {
   color: gray;
 }
-
 .image-section__primary {
   background-image: url(/images/product_detailed_page/desctop/PG.10216885.JJ169XX.BZ.jpg);
   width: 80%;
@@ -60,3 +59,12 @@
 .image-section__indicators {
   margin: 0 0 -25px 0;
 }
+/* modal */
+.image-section__modal--height{
+  height: 620px;
+}
+.image-section__modal-button{
+  position: absolute;
+}
+
+

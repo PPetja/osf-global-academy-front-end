@@ -351,6 +351,17 @@
   </header>
   <main>
     <section class="image-section">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content border-0 rounded-3">
+            <div class="image-section__modal--height modal-body p-0 w-100 rounded-3">
+              <button class="image-section__modal-button btn-close m-2" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="image-section__modal--height image-section__primary w-100 rounded-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-center">
           <li class="breadcrumb-item"><a class="breadcrumb__link text-decoration-none" href="/index.html">Home</a>
@@ -360,10 +371,11 @@
           <li class="breadcrumb-item active" aria-current="page">Ruffle Front V-Nec Cardigan</li>
         </ol>
       </nav>
-      <h1 class="text-center">V-Nec Cardigan</h1>
+      <h1 class="text-center mb-3">V-Nec Cardigan</h1>
       <div class="d-flex flex-column align-items-center">
         <div class="image-section__primary">
-          <button class="image-section__primary-button border-0 m-2">
+          <button class="image-section__primary-button border-0 m-2" type="button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
             <img src="/images/product_detailed_page/mobile/full size icon.png" alt="full_size_icon">
           </button>
         </div>
