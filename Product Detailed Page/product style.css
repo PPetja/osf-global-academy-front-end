@@ -1,9 +1,12 @@
+body {
+  background-color: #f1edea;
+}
 /* first section */
 .image-section {
   margin-top: 70px;
   margin-bottom: 10px;
 }
-.breadcrumb {
+.image-section__breadcrumb {
   font-size: 12px;
   text-align: center;
 }
@@ -15,14 +18,14 @@
 }
 .image-section__primary {
   background-image: url(/images/product_detailed_page/desctop/PG.10216885.JJ169XX.BZ.jpg);
-  width: 80%;
+  width: 100%;
   height: 290px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 1.5%;
 }
-.image-section__primary-button{
+.image-section__primary-button {
   background: none;
 }
 
@@ -60,11 +63,9 @@
   margin: 0 0 -25px 0;
 }
 /* modal */
-.image-section__modal--height{
+.image-section__modal--height {
   height: 620px;
 }
-.image-section__modal-button{
+.image-section__modal-button {
   position: absolute;
 }
-
-
