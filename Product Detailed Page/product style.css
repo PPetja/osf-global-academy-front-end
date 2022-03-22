@@ -23,7 +23,6 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  border-radius: 1.5%;
 }
 .image-section__primary-button {
   background: none;
@@ -44,7 +43,6 @@ body {
   border: 2px solid gray;
   margin-right: 5px;
   opacity: 50%;
-  border-radius: 5%;
 }
 
 .image-section__indicators-button[data-bs-target] {
@@ -64,8 +62,37 @@ body {
 }
 /* modal */
 .image-section__modal--height {
-  height: 620px;
+  height: 100%;
 }
 .image-section__modal-button {
   position: absolute;
+}
+.image-section__price {
+  font-size: 32px;
+}
+
+/* drop down link */
+.image-section__dropdown-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-top: 2px;
+}
+/* button with quantity the item */
+.image-section__quantity {
+  border: 2px solid gray;
+  height: 34px;
+  font-weight: 400;
+  width: 40%;
+}
+.image-section__quantity-button-minus:focus,
+.image-section__quantity-button-plus:focus {
+  box-shadow: none;
+}
+/* add to card*/
+.image-section__add-to-card-button {
+  background-color: #82b921;
+  border: #f1edea;
 }

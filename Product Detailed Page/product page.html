@@ -350,12 +350,13 @@
     </nav>
   </header>
   <main>
-    <section class="image-section ">
+    <section class="image-section">
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content border-0 rounded-3">
+        <div class="image-section__modal--height modal-dialog m-0 p-3">
+          <div class="image-section__modal--height modal-content border-0 rounded-3">
             <div class="image-section__modal--height modal-body p-0 w-100 rounded-3">
-              <button class="image-section__modal-button btn-close m-2" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button class="image-section__modal-button btn-close p-3" type="button" data-bs-dismiss="modal"
+                aria-label="Close"></button>
               <div class="image-section__modal--height image-section__primary w-100 rounded-3">
               </div>
             </div>
@@ -372,8 +373,8 @@
         </ol>
       </nav>
       <h1 class="text-center mb-3">V-Nec Cardigan</h1>
-      <div class="d-flex flex-column align-items-center bg-white mx-3">
-        <div class="image-section__primary">
+      <div class="d-flex flex-column align-items-center bg-white mx-4 rounded-2">
+        <div class="image-section__primary rounded-2">
           <button class="image-section__primary-button border-0 m-2" type="button" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             <img src="/images/product_detailed_page/mobile/full size icon.png" alt="full_size_icon">
@@ -386,17 +387,17 @@
                 <div class="d-flex justify-content-evenly">
                   <div class="selected thumbnail"
                     data-big="/images/product_detailed_page/desctop/PG.10216885.JJ169XX.BZ.jpg">
-                    <div class="thumbnail__image"
+                    <div class="thumbnail__image rounded-2"
                       style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ169XX.BZ-small.jpg)">
                     </div>
                   </div>
                   <div class="thumbnail" data-big="/images/product_detailed_page/desctop/PG.10216885.JJ169XX.PZ.jpg">
-                    <div class="thumbnail__image"
+                    <div class="thumbnail__image rounded-2"
                       style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ169XX.PZ-small.jpg)">
                     </div>
                   </div>
                   <div class="thumbnail" data-big="/images/product_detailed_page/desctop/PG.10216885.JJ8UTXX.BZ.jpg">
-                    <div class="thumbnail__image"
+                    <div class="thumbnail__image rounded-2"
                       style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ8UTXX.BZ-small.jpg)">
                     </div>
                   </div>
@@ -404,7 +405,7 @@
               </div>
               <div class="carousel-item" data-bs-interval="false">
                 <div class="thumbnail ms-2" data-big="/images/product_detailed_page/desctop/PG.10216885.JJ8UTXX.PZ.jpg">
-                  <div class="thumbnail__image"
+                  <div class="thumbnail__image rounded-2"
                     style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ8UTXX.PZ-small.jpg)">
                   </div>
                 </div>
@@ -418,10 +419,50 @@
             </div>
           </div>
         </aside>
-        <div>
-          <h2><strong>$299.99</strong></h2>
-          <p><strong>Color: Dark Gray</strong></p>
-          <p><strong>Qty: 2</strong></p>
+        <div class="mx-2">
+          <h2 class="image-section__price my-2 mb-4"><strong>$299.99</strong></h2>
+          <div class="dropdown">
+            <div
+              class="btn d-flex justify-content-evenly align-items-center border-2 border-secondary dropdown-toggle rounded-pill w-75 py-1"
+              href="#" role="button" data-bs-toggle="dropdown">
+              <div class="image-section__dropdown-btn">
+                <span class="image-section__dropdown-circle bg-secondary me-3 ms-1"></span>
+                Dark & Gray
+              </div>
+            </div>
+
+            <ul class="dropdown-menu p-0 rounded-3 w-75" aria-labelledby="dropdownMenuLink">
+              <li
+                class="image-section__dropdown-list dropdown-item rounded-2 py-2 px-0 border-bottom border-1 border-secondary">
+                <div class="image-section__dropdown-list-container">
+                  <span class="image-section__dropdown-circle me-3 ms-1 bg-secondary"></span>
+                  Dark & Gray
+                </div>
+              </li>
+              <li
+                class="image-section__dropdown-list dropdown-item rounded-2 py-2 px-0 border-bottom border-1 border-secondary"
+                href="#">
+                <div class="image-section__dropdown-list-container">
+                  <span class="image-section__dropdown-circle me-3 ms-1 bg-success"></span>
+                  Gren & Blue
+                </div>
+              </li>
+              <li class="image-section__dropdown-list dropdown-item rounded-2 py-2 px-0" href="#">
+                <div class="image-section__dropdown-list-container">
+                  <span class="image-section__dropdown-circle me-3 ms-1 bg-danger"></span>
+                  Red & White
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="image-section__quantity d-flex justify-content-evenly align-items-center mt-3 rounded-pill">
+            <button type="button" class="image-section__quantity-button-plus btn"><strong>+</strong></button>
+            <p class="m-0">2</p>
+            <button type="button" class="image-section__quantity-button-minus btn"><strong>-</strong></button>
+          </div>
+          <button type="button"
+            class="image-section__add-to-card-button mt-3 mb-4 btn btn-secondary rounded-pill py-1 w-75">ADD TO
+            CART</button>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illum odio, in iure consectetur
             atque
             esse possimus repellat qui, vel, impedit ipsum? Inventore odit incidunt, eveniet, labore saepe expedita unde
