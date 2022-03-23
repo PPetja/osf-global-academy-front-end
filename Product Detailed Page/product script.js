@@ -17,3 +17,20 @@ $(".image-section__dropdown-list-container").on("click", function () {
   $(".image-section__dropdown-btn").empty();
   self.clone().appendTo(".image-section__dropdown-btn");
 });
+
+// Button with quantity the item
+const quantityText = $(".image-section__quantity-text");
+let counter = 0;  
+
+$(".image-section__quantity-button-plus").on("click", function () {
+counter += 1;
+quantityText.empty().append(counter);
+});
+
+$(".image-section__quantity-button-minus").on("click", function () {
+  if (counter >= 1) {
+    counter -= 1;
+    quantityText.empty().append(counter);
+  }
+  else{}
+});
