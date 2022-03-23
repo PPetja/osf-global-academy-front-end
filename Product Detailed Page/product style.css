@@ -96,3 +96,11 @@ body {
   background-color: #82b921;
   border: #f1edea;
 }
+/* text with describe */
+.image-section__describe-button {
+  color: #82b921;
+  font-weight: 500;
+}
+.image-section__describe-text {
+  display: none;
+}
