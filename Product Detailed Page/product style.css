@@ -83,9 +83,9 @@ body {
 /* button with quantity the item */
 .image-section__quantity {
   border: 2px solid gray;
-  height: 34px;
+  height: 35px;
   font-weight: 400;
-  width: 40%;
+  width: 150px;
 }
 .image-section__quantity-button-minus:focus,
 .image-section__quantity-button-plus:focus {
@@ -95,7 +95,7 @@ body {
 .image-section__add-to-card-button {
   background-color: #82b921;
   border: 2px solid #f1edea;
-  width: 75%;
+  width: 220px;
 }
 .image-section__add-to-card-button:hover,
 .image-section__add-to-card-button:active,
@@ -105,7 +105,7 @@ body {
   color: #82b921;
 }
 .image-section__dropdown-button {
-  width: 75%;
+  width: 220px;
 }
 /* text with describe */
 .image-section__describe-button {
@@ -117,6 +117,9 @@ body {
 }
 
 /* card section */
+.card-items__header {
+    width: 110%;
+  }
 .popular-card__carousel-button [data-bs-target] {
   background-color: rgb(0, 0, 0);
 }
@@ -139,9 +142,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .image-section__header {
+  .image-section__header, .card-items__header {
     font-size: 40px;
-    width: 50%;
+    width: 80%;
   }
   .image-section__modal--height {
     height: auto;
@@ -162,9 +165,9 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .image-section__header {
+  .image-section__header, .card-items__header {
     font-size: 55px;
-    width: 50%;
+    width: 56%;
   }
   .image-section {
     margin-top: 90px;
