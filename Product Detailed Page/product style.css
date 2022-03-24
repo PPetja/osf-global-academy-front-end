@@ -94,7 +94,14 @@ body {
 /* add to card*/
 .image-section__add-to-card-button {
   background-color: #82b921;
-  border: #f1edea;
+  border: 2px solid #f1edea;
+}
+.image-section__add-to-card-button:hover,
+.image-section__add-to-card-button:active,
+.image-section__add-to-card-button:focus {
+  background-color: white;
+  border: 2px solid #82b921;
+  color: #82b921;
 }
 /* text with describe */
 .image-section__describe-button {
@@ -103,4 +110,20 @@ body {
 }
 .image-section__describe-text {
   display: none;
+}
+
+/* card section */
+.popular-card__carousel-button [data-bs-target] {
+  background-color: rgb(0, 0, 0);
+}
+.popular-card__scroll-button {
+  background-color: #82b921;
+  border: 2px solid #f1edea;
+  color: white;
+}
+.popular-card__scroll-button:hover,
+.popular-card__scroll-button:focus {
+  background-color: white;
+  border: 2px solid #82b921;
+  color: #82b921;
 }
