@@ -127,3 +127,9 @@ body {
   border: 2px solid #82b921;
   color: #82b921;
 }
+.card-background:hover{
+  background: none;
+}
+.card-background:hover .card {
+  opacity: 1;
+}
