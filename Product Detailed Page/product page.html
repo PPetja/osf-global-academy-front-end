@@ -352,7 +352,7 @@
   <main>
     <section class="image-section">
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="image-section__modal--height modal-dialog m-0 p-3">
+        <div class="image-section__modal--height modal-dialog p-3">
           <div class="image-section__modal--height modal-content border-0 rounded-3">
             <div class="image-section__modal--height modal-body p-0 w-100 rounded-3">
               <button class="image-section__modal-button btn-close p-3" type="button" data-bs-dismiss="modal"
@@ -373,18 +373,18 @@
         </ol>
       </nav>
       <h1 class="text-center mb-3">V-Nec Cardigan</h1>
-      <div class="d-flex flex-column align-items-center bg-white mx-4 rounded-2">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start bg-white mx-4 rounded-2">
         <div class="image-section__primary rounded-2">
           <button class="image-section__primary-button border-0 m-2" type="button" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             <img src="/images/product_detailed_page/mobile/full size icon.png" alt="full_size_icon">
           </button>
         </div>
-        <aside class="d-flex justify-content-center mt-2 mb-5 w-100">
-          <div id="carouselExampleDark" class="carousel slide w-100">
+        <aside class="d-flex justify-content-center mt-2 mt-md-1 mb-5 w-auto">
+          <div id="carouselExampleDark" class="carousel slide w-auto ">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="false">
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly align-items-md-start flex-md-column">
                   <div class="selected thumbnail"
                     data-big="/images/product_detailed_page/desctop/PG.10216885.JJ169XX.BZ.jpg">
                     <div class="thumbnail__image rounded-2"
@@ -401,9 +401,14 @@
                       style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ8UTXX.BZ-small.jpg)">
                     </div>
                   </div>
+                  <div class="thumbnail d-none d-md-block" data-big="/images/product_detailed_page/desctop/PG.10216885.JJ8UTXX.PZ.jpg">
+                    <div class="thumbnail__image rounded-2"
+                      style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ8UTXX.PZ-small.jpg)">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="false">
+              <div class="carousel-item d-md-none" data-bs-interval="false">
                 <div class="thumbnail ms-2" data-big="/images/product_detailed_page/desctop/PG.10216885.JJ8UTXX.PZ.jpg">
                   <div class="thumbnail__image rounded-2"
                     style="background-image: url(/images/product_detailed_page/mobile/PG.10216885.JJ8UTXX.PZ-small.jpg)">
@@ -411,7 +416,7 @@
                 </div>
               </div>
             </div>
-            <div class="image-section__indicators carousel-indicators">
+            <div class="image-section__indicators carousel-indicators d-md-none ">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
                 class="image-section__indicators-button active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
@@ -419,7 +424,7 @@
             </div>
           </div>
         </aside>
-        <div class="mx-2">
+        <div class="image-section__information-container mx-2">
           <h2 class="image-section__price my-2 mb-4"><strong>$299.99</strong></h2>
           <div class="dropdown">
             <div
@@ -472,7 +477,7 @@
             </p>
             <button class="image-section__describe-button bg-white border-0 ps-0 pb-2">Read more</button>
           </div>
-          <div class="text-center d-flex justify-content-md-center py-2">
+          <div class="text-center d-flex justify-content-md-start py-2">
             <p class="m-0 opacity-50 py-2 pe-3 ps-0 fw-bold"> Share</p>
             <a href="https://uk-ua.facebook.com/" target="_blank" class="text-decoration-none opacity-50 p-2">
               <img src="/images/section-6/mobile/f.png" alt="facebook" /></a>
@@ -487,6 +492,9 @@
             </a>
           </div>
         </div>
+      </div>
+      <div>
+
       </div>
     </section>
     <section class="popular-card conteiner-fluid text-center">

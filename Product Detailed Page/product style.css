@@ -20,7 +20,7 @@ body {
   background-image: url(/images/product_detailed_page/desctop/PG.10216885.JJ169XX.BZ.jpg);
   width: 100%;
   height: 290px;
-  background-size: cover;
+  background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -121,15 +121,31 @@ body {
   border: 2px solid #f1edea;
   color: white;
 }
-.popular-card__scroll-button:hover,
-.popular-card__scroll-button:focus {
+.popular-card__scroll-button:hover {
   background-color: white;
   border: 2px solid #82b921;
   color: #82b921;
 }
-.card-background:hover{
+.card-background:hover {
   background: none;
 }
 .card-background:hover .card {
   opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-section__modal--height {
+    height: auto;
+  }
+  .image-section__primary {
+    width: 240%;
+    height: 470px;
+    background-size: cover;
+  }
+  .thumbnail__image {
+    margin: 0px 7px 10px 10px;
+  }
+  .image-section__information-container{
+    width: 150%;
+  }
 }
