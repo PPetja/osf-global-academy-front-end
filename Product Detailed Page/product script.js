@@ -14,8 +14,8 @@ $(".thumbnail").on("click", function () {
 // Drop down link
 $(".image-section__dropdown-list-container").on("click", function () {
   let self = $(this);
-  $(".image-section__dropdown-btn").empty();
-  self.clone().appendTo(".image-section__dropdown-btn");
+  $(".image-section__dropdown-container").empty();
+  self.clone().appendTo(".image-section__dropdown-container");
 });
 
 // Button with quantity the item

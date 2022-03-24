@@ -95,6 +95,7 @@ body {
 .image-section__add-to-card-button {
   background-color: #82b921;
   border: 2px solid #f1edea;
+  width: 75%;
 }
 .image-section__add-to-card-button:hover,
 .image-section__add-to-card-button:active,
@@ -102,6 +103,9 @@ body {
   background-color: white;
   border: 2px solid #82b921;
   color: #82b921;
+}
+.image-section__dropdown-button {
+  width: 75%;
 }
 /* text with describe */
 .image-section__describe-button {
@@ -126,6 +130,7 @@ body {
   border: 2px solid #82b921;
   color: #82b921;
 }
+
 .card-background:hover {
   background: none;
 }
@@ -134,18 +139,49 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .image-section__header {
+    font-size: 40px;
+    width: 50%;
+  }
   .image-section__modal--height {
     height: auto;
   }
   .image-section__primary {
-    width: 240%;
-    height: 470px;
+    width: 130%;
+    height: 500px;
     background-size: cover;
   }
   .thumbnail__image {
     margin: 0px 7px 10px 10px;
   }
-  .image-section__information-container{
+  .image-section__information-container {
     width: 150%;
+  }
+  .image-section__dropdown-button {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .image-section__header {
+    font-size: 55px;
+    width: 50%;
+  }
+  .image-section {
+    margin-top: 90px;
+  }
+  .thumbnail__image {
+    margin: 5px 50px 10px 20px;
+  }
+  .image-section__quantity {
+    width: 20%;
+  }
+  .image-section__price {
+    font-size: 45px;
+  }
+  .image-section__add-to-card-button {
+    width: 50%;
+  }
+  .image-section__dropdown-button {
+    width: 35%;
   }
 }
