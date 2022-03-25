@@ -118,8 +118,8 @@ body {
 
 /* card section */
 .card-items__header {
-    width: 110%;
-  }
+  width: 110%;
+}
 .popular-card__carousel-button [data-bs-target] {
   background-color: rgb(0, 0, 0);
 }
@@ -140,9 +140,14 @@ body {
 .card-background:hover .card {
   opacity: 1;
 }
+.image-section__tab-content,
+.image-section__tab {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
-  .image-section__header, .card-items__header {
+  .image-section__header,
+  .card-items__header {
     font-size: 40px;
     width: 80%;
   }
@@ -165,7 +170,8 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .image-section__header, .card-items__header {
+  .image-section__header,
+  .card-items__header {
     font-size: 55px;
     width: 56%;
   }
@@ -186,5 +192,28 @@ body {
   }
   .image-section__dropdown-button {
     width: 35%;
+  }
+  .image-section__tab-content,
+  .image-section__tab {
+    display: block;
+  }
+  .image-section__tab-container-button,
+  .image-section__tab-container-button:hover {
+    opacity: 50%;
+    color: black;
+    border: none;
+  }
+
+  .image-section__tab-container .image-section__tab-container-button.active {
+    color: white;
+    background-color: #262a33;
+    border-color: #262a33;
+    opacity: 100%;
+  }
+  .image-section__tab-content {
+    background: #262a33;
+    margin-top: -2px;
+    height: 250px;
+    font-size: 17px;
   }
 }
