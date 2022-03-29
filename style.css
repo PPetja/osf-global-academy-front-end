@@ -26,6 +26,23 @@
 .navigation__brand {
   width: 50%;
 }
+/* Cookies */
+.cookies__modal-dialog-button-close {
+  backdrop-filter: none;
+}
+.cookies__modal-dialog-button-accept {
+  background-color: #82b921;
+}
+.cookies__modal-dialog-link,
+.cookies__modal-dialog-link:hover,
+.cookies__modal-dialog-header {
+  color: #82b921;
+}
+
+.cookies__moadl {
+  backdrop-filter: brightness(0.5);
+  display: none;
+}
 
 /* first section */
 .navigation__right-basket-item {
@@ -40,7 +57,7 @@
 .slider__end {
   background-image: url(/images/section-1/mobile/first\ section\ cerousell\ 3.jpg);
 }
-.image-style{
+.image-style {
   width: 100%;
   height: 470px;
   background-size: cover;
@@ -76,11 +93,10 @@
   filter: drop-shadow(2px 4px 6px black);
   color: white;
 }
-.slider-top__button:hover{
+.slider-top__button:hover {
   background: white;
   color: black;
 }
-
 
 .carousel-indicators [data-bs-target] {
   height: 10px;
@@ -108,13 +124,13 @@
 }
 .discounts__button {
   padding: 5px 20px 5px 20px;
-  color:  #3a5b96;
+  color: #3a5b96;
   background-color: white;
   border: 2px solid #3a5b96;
 }
-.discounts__button:hover{
-background: #3a5b96;
-color: white;
+.discounts__button:hover {
+  background: #3a5b96;
+  color: white;
 }
 /* second section */
 .card__special {
@@ -150,7 +166,7 @@ color: white;
   padding: 5px 15px 5px 15px;
   border-radius: 15px 0px 0px 15px;
 }
-.card__button-buy--form:hover{
+.card__button-buy--form:hover {
   color: white;
   background-color: #84bc22;
 }
@@ -159,7 +175,6 @@ color: white;
   font-size: 18px;
   width: 50%;
 }
-
 
 .card__special--pink {
   background: linear-gradient(
@@ -198,7 +213,7 @@ color: white;
     rgba(66, 215, 169, 1) 100%
   );
 }
-.card__button-load-more{
+.card__button-load-more {
   display: none;
 }
 /* third section */
@@ -258,7 +273,8 @@ color: white;
   background: #262a32;
 }
 
-.footer__counter, .navigation__counter{
+.footer__counter,
+.navigation__counter {
   border: 2px solid #82b921;
   border-radius: 50%;
   padding: 0px 4px 0px 4px;
@@ -272,7 +288,7 @@ color: white;
 .card-items__header-line {
   width: 25%;
 }
-.featured-section{
+.featured-section {
   display: none;
   background-color: #262a32;
   height: 555px;
@@ -297,7 +313,8 @@ color: white;
     color: #84bc22;
     margin-top: -10px;
   }
-  .footer__counter, .navigation__counter {
+  .footer__counter,
+  .navigation__counter {
     background-color: white;
   }
   .navigation__brand {
@@ -316,6 +333,18 @@ color: white;
     color: white;
     border-bottom: 2px solid #84bc22;
   }
+  /* modal */
+
+  .cookies__modal-dialog {
+    max-width: 85%;
+    left: 95px;
+    top: 70%;
+    margin: 0;
+  }
+  .cookies__modal-dialog-button {
+    margin-top: -35px;
+  }
+
   /* first section */
   .slider__start {
     background-image: url(/images/section-1/desktop/Layer\ 3.png);
@@ -367,7 +396,6 @@ color: white;
 }
 
 @media only screen and (min-width: 1280px) {
-
   /* top navigation */
 
   .navigation__button-icon {
@@ -399,11 +427,11 @@ color: white;
   .navigation__header-container {
     padding: 0 17px 0 17px;
   }
-  .navigation__container-dropdown{
+  .navigation__container-dropdown {
     height: auto;
     padding-top: 30px;
   }
-  .navigation__dropdown-img{
+  .navigation__dropdown-img {
     width: 250px;
     height: 250px;
   }
@@ -441,7 +469,6 @@ color: white;
     filter: invert(1);
     width: 25%;
     justify-content: center;
-
   }
 
   /* third section */
@@ -452,40 +479,40 @@ color: white;
   .banner__header {
     font-size: 48px;
   }
-  .card__button-load-more{
+  .card__button-load-more {
     display: flex;
   }
 
   /* fotrh section */
-  .featured-section{
+  .featured-section {
     display: block;
   }
-  .featured-section__left-row{
+  .featured-section__left-row {
     height: 0;
     margin: -40px 0px 0px 160px;
   }
-.featured-section__right-row{
-  height: 0px;
-  margin: -40px 160px 0px 0px;
-}
-.featured-section__middle-control-symbol{
-  font-size: 20px;
-  font-weight: bolder;
-  margin-bottom: 12px;
-}
-.featured-section__card-text{
-  font-size: 16px;
-}
-.featured-section__card-span {
-  font-size: 14px;
-  color: #82b921;
-}
+  .featured-section__right-row {
+    height: 0px;
+    margin: -40px 160px 0px 0px;
+  }
+  .featured-section__middle-control-symbol {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+  }
+  .featured-section__card-text {
+    font-size: 16px;
+  }
+  .featured-section__card-span {
+    font-size: 14px;
+    color: #82b921;
+  }
   /* fifth section */
 
-  .bottom-accordion{
+  .bottom-accordion {
     display: flex;
   }
-  .bottom-accordion__social-media{
+  .bottom-accordion__social-media {
     width: 85%;
   }
 
