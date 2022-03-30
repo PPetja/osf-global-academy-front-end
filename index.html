@@ -115,7 +115,7 @@
                 <option value="ukraine">UA</option>
               </select>
               <select name="currency" id="currency" class="border-0 text-secondary ps-3">
-                <option value="dolar">$ US</option>
+                <option value="dolar">USD</option>
                 <option value="euro">EUR</option>
                 <option value="hryvnia">UAH</option>
               </select>
@@ -130,8 +130,10 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link px-0 mx-3">
-                  <img src="/images/footer/Profile User.png" alt="Profile" width="25" height="25"
-                    class="nav__img--filter" /></a>
+                  <!-- profile -->
+                  <img src="/images/footer/Profile User.png" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    alt="Profile" width="25" height="25" class="nav__img--filter" />
+                </a>
               </li>
               <li class="nav-item nav__item-heart">
                 <a href="#" class="nav-link px-0 mx-2">
@@ -349,7 +351,36 @@
     </nav>
   </header>
   <main>
-    <section class="cookies">
+    <section>
+      <div class="login-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center">
+              <h2 class="modal-title my-3" id="exampleModalLabel"><strong>Sign in</strong></h2>
+              <form class="w-75">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label fs-6">Email</label>
+                  <input type="email" class="form-control border-2 rounded-pill" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                </div>
+                <div class="mb-4">
+                  <label for="exampleInputPassword1" class="form-label fs-6">Lato</label>
+                  <a href="#" id="emailHelp" class="login-modal__link form-text text-decoration-none float-end">forgot
+                    password</a>
+                  <input type="password" class="form-control border-2 rounded-pill" id="exampleInputPassword1">
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <button type="button" class="login-modal__button btn btn-secondary rounded-pill px-5"
+                    data-bs-dismiss="modal">LOGIN</button>
+                  <a href="#" id="emailHelp" class="login-modal__link form-text text-decoration-none mb-3">I dont have
+                    an account</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="cookies__moadl modal" tabindex="-1">
         <div class="cookies__modal-dialog modal-dialog">
           <div class="modal-content">
