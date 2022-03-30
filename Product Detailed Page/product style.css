@@ -91,6 +91,9 @@ body {
 .image-section__quantity-button-plus:focus {
   box-shadow: none;
 }
+.image-section__dropdown-list {
+  cursor: pointer;
+}
 /* add to card*/
 .image-section__add-to-card-button {
   background-color: #82b921;
@@ -107,6 +110,18 @@ body {
 .image-section__dropdown-button {
   width: 220px;
 }
+
+.image-section__quantity-text::-webkit-outer-spin-button,
+.image-section__quantity-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.image-section__quantity-text,
+.image-section__quantity-text:focus-visible {
+  outline: none;
+  border: none;
+}
+
 /* text with describe */
 .image-section__describe-button {
   color: #82b921;

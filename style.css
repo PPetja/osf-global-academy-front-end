@@ -26,6 +26,9 @@
 .navigation__brand {
   width: 50%;
 }
+.navigation__counter{
+  
+}
 /* Cookies */
 .cookies__modal-dialog-button-close {
   backdrop-filter: none;

@@ -16,3 +16,13 @@ $(".login-modal__img-container").mousedown(function () {
 $(".login-modal__img-container").mouseup(function () {
   $(".login-modal__form-password").attr("type", "password");
 });
+
+// section 1 
+$(".card__hover-btn").on("click", function () {
+  $(".navigation__counter");
+  $(".footer__counter");
+
+  counter-like
+  counter-bag
+
+});
