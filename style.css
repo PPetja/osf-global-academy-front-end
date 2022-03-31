@@ -26,8 +26,8 @@
 .navigation__brand {
   width: 50%;
 }
-.navigation__counter{
-  
+.navigation__counter {
+  visibility: hidden;
 }
 /* Cookies */
 .cookies__modal-dialog-button-close {
@@ -148,7 +148,7 @@
   padding: 5px 20px 5px 20px;
   color: #3a5b96;
   background-color: white;
-  border: 2px solid #3a5b96;
+  border: 1.5px solid #3a5b96;
 }
 .discounts__button:hover {
   background: #3a5b96;
@@ -219,7 +219,8 @@
   opacity: 1;
   z-index: 1;
 }
-.card__hover-btn {
+.card__hover-btn-bag,
+.card__hover-btn-like {
   z-index: 5;
 }
 .card-background:hover .card {
@@ -314,6 +315,9 @@
   display: none;
   background-color: #262a32;
   height: 555px;
+}
+.counter-bag, .counter-like{
+  visibility: hidden;
 }
 @media only screen and (min-width: 768px) {
   /* top navigation */

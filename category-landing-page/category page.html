@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OSF-Academy</title>
@@ -8,9 +9,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/category-landing-page/category style.css" />
-    </head>
-    <body>
-        <header>
+</head>
+
+<body>
+    <header>
         <nav class="navigation container-fluid navbar navbar-expand-lg navbar-light border-bottom fixed-top bg-white">
             <div class="container-fluid navigation__iteam p-0">
                 <button class="navbar-toggler border-0 shadow-none d-xl-none d-md-none d-lg-none" type="button"
@@ -163,13 +165,13 @@
                                 <a href="#" class="nav-link px-0 mx-2">
                                     <img src="/images/footer/Heart Outline.png" alt="Heart" width="25" height="25"
                                         class="nav__img--filter" />
-                                    <sup class="navigation__counter">1</sup></a>
+                                    <sup class="navigation__counter counter-like">1</sup></a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link ps-3 px-0 mx-2">
                                     <img src="/images/footer/Bag For Shopping.png" alt="Bag" width="25" height="25"
                                         class="nav__img--filter" />
-                                    <sup class="navigation__counter">2</sup></a>
+                                    <sup class="navigation__counter counter-bag">2</sup></a>
                             </li>
                         </ul>
                     </div>
@@ -394,189 +396,215 @@
                 </div>
             </div>
         </nav>
-         </header>
-         <main>
-            <section class="content p-3 "> 
-                <div class="d-flex flex-column align-items-center">
-                   <nav aria-label="breadcrumb">
+    </header>
+    <main>
+        <section class="content p-3 ">
+            <div class="d-flex flex-column align-items-center">
+                <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center pt-4">
-                        <li class="breadcrumb-item"><a class="content__previous-page text-decoration-none" href="/index.html">Home</a>
+                        <li class="breadcrumb-item"><a class="content__previous-page text-decoration-none"
+                                href="/index.html">Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Category Landing</li>
                     </ol>
-                  </nav>
-                  <div class="content__header text-center d-flex justify-content-center my-lg-3">
+                </nav>
+                <div class="content__header text-center d-flex justify-content-center my-lg-3">
                     <div class="w-50 border-bottom border-2 border-black mb-3"></div>
                     <p class="m-0 px-3"><strong>Services</strong></p>
                     <div class="w-50 border-bottom border-2 border-black mb-3"></div>
-                  </div>
-                  <a href="#" class="content__subscribe-header text-decoration-none my-3 d-md-none">Hide Filter</a>
-                  <div class="my-lg-3 d-md-flex justify-content-md-between justify-content-lg-around py-md-3 bg-white w-100 px-3 rounded-3">
-                <div class="content__filter-box">
-                    <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-md-2 me-lg-4">Price</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
-                            <option value="$0-100">$0.00 - $100.00</option>
-                            <option value="$100-200">$100.00 - $200.00</option>
-                            <option value="$200-300">$200.00 - $300.00</option>
-                            <option value="$300-400">$300.00 - $400.00</option>
-                        </select>
-                    </form>
-                    <div class="d-flex justify-content-around mt-3">
-                        <label for="radio" class="w-25 me-md-2 me-lg-4">Color</label>
-                        <div class="w-75 d-flex">
-                        <div class="form-check" name="radio">
-                            <input class="form-check-input bg-light" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-success" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-danger" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-warning" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input bg-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        </div>
+                </div>
+                <a href="#" class="content__subscribe-header text-decoration-none my-3 d-md-none">Hide Filter</a>
+                <div
+                    class="my-lg-3 d-md-flex justify-content-md-between justify-content-lg-around py-md-3 bg-white w-100 px-3 rounded-3">
+                    <div class="content__filter-box">
+                        <form action="#" class="d-flex justify-content-around mt-3">
+                            <label for="cars" class="w-25 me-md-2 me-lg-4">Price</label>
+                            <select name="cars" id="cars"
+                                class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
+                                <option value="$0-100">$0.00 - $100.00</option>
+                                <option value="$100-200">$100.00 - $200.00</option>
+                                <option value="$200-300">$200.00 - $300.00</option>
+                                <option value="$300-400">$300.00 - $400.00</option>
+                            </select>
+                        </form>
+                        <div class="d-flex justify-content-around mt-3">
+                            <label for="radio" class="w-25 me-md-2 me-lg-4">Color</label>
+                            <div class="w-75 d-flex">
+                                <div class="form-check" name="radio">
+                                    <input class="form-check-input bg-light" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-info" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-secondary" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-success" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-danger" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-warning" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input bg-info" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="content__filter-box">
+                        <form action="#" class="d-flex justify-content-around mt-3">
+                            <label for="cars" class="w-25 me-md-2 me-lg-4">Brands</label>
+                            <select name="cars" id="cars"
+                                class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
+                                <option value="ukraine sport">Ukraine sport</option>
+                                <option value="english sport">English sport</option>
+                                <option value="USA sport">USA sport</option>
+                                <option value="Arabian sport">Arabian sport</option>
+                            </select>
+                        </form>
+                        <form action="#" class="d-flex justify-content-around mt-3">
+                            <label for="cars" class="w-25 me-md-1 me-lg-3">Sort by</label>
+                            <select name="cars" id="cars"
+                                class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
+                                <option value="price">Price</option>
+                                <option value="color">Color</option>
+                                <option value="brands">Brands</option>
+                                <option value="Size">Size</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="content__filter-box">
+                        <form action="#" class="d-flex justify-content-around mt-3">
+                            <label for="cars" class="w-25 me-md-2 me-lg-4">Size</label>
+                            <select name="cars" id="cars"
+                                class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="extra large">Extra large</option>
+                            </select>
+                        </form>
+                        <form action="#" class="d-flex justify-content-around mt-3 pb-3 pb-md-0">
+                            <label for="cars" class="w-25 me-md-2 me-lg-4">Show</label>
+                            <select name="cars" id="cars"
+                                class="w-75 rounded-pill px-1 py-1 border-2 border-secondary text-secondary">
+                                <option value="16 per page">16 per page</option>
+                                <option value="20 per page">20 per page</option>
+                                <option value="24 per page">24 per page</option>
+                                <option value="28 per page">28 per page</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
-                 <div class="content__filter-box">
-                    <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-md-2 me-lg-4">Brands</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
-                            <option value="ukraine sport">Ukraine sport</option>
-                            <option value="english sport">English sport</option>
-                            <option value="USA sport">USA sport</option>
-                            <option value="Arabian sport">Arabian sport</option>
-                        </select>
-                    </form>
-                    <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-md-1 me-lg-3">Sort by</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
-                            <option value="price">Price</option>
-                            <option value="color">Color</option>
-                            <option value="brands">Brands</option>
-                            <option value="Size">Size</option>
-                        </select>
-                    </form>
-                </div>
-                 <div class="content__filter-box">
-                    <form action="#" class="d-flex justify-content-around mt-3">
-                        <label for="cars" class="w-25 me-md-2 me-lg-4">Size</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-3 py-1 border-2 border-secondary text-secondary">
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="extra large">Extra large</option>
-                        </select>
-                    </form>
-                    <form action="#" class="d-flex justify-content-around mt-3 pb-3 pb-md-0">
-                        <label for="cars" class="w-25 me-md-2 me-lg-4">Show</label>
-                        <select name="cars" id="cars" class="w-75 rounded-pill px-1 py-1 border-2 border-secondary text-secondary">
-                            <option value="16 per page">16 per page</option>
-                            <option value="20 per page">20 per page</option>
-                            <option value="24 per page">24 per page</option>
-                            <option value="28 per page">28 per page</option>
-                        </select>
-                    </form>
-                </div>
-                  </div>
-                </div>
-                <div>
-                <p class="text-center text-secondary my-3 pb-lg-4"><span> <strong>12,931</strong></span> result in apparel</p>
+            </div>
+            <div>
+                <p class="text-center text-secondary my-3 pb-lg-4"><span> <strong>12,931</strong></span> result in
+                    apparel</p>
                 <div class="d-lg-flex">
                     <div class="d-md-flex justify-content-md-around">
-                    <div class="card mb-3 rounded-3 me-lg-3">
-                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" alt="Layer 1" height="260">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                            <p class="text-secondary text-center">$ 799.55</p>
+                        <div class="card mb-3 rounded-3 me-lg-3">
+                            <img src="/images/category landing page/Layer 1.png" class="card-img-top" alt="Layer 1"
+                                height="260">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                <p class="text-secondary text-center">$ 799.55</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mb-3 rounded-3 mx-lg-3" >
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" alt="Layer 12" height="260">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
-                            <p class="text-secondary text-center">$ 659.55</p>
+                        <div class="card mb-3 rounded-3 mx-lg-3">
+                            <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                alt="Layer 12" height="260">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                <p class="text-secondary text-center">$ 659.55</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div class="d-md-flex justify-content-md-around">
-                    <div class="card mb-3 rounded-3 mx-lg-3">
-                        <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260" alt="Layer 5">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                            <p class="text-secondary text-center">$ 2195.00</p>
+                        <div class="card mb-3 rounded-3 mx-lg-3">
+                            <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260"
+                                alt="Layer 5">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                <p class="text-secondary text-center">$ 2195.00</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 rounded-3 ms-lg-3">
+                            <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                height="260" alt="layer 12">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                <p class="text-secondary text-center">$ 659.55</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card mb-3 rounded-3 ms-lg-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="layer 12">
-                        <div class="card-body">
-                             <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
-                             <p class="text-secondary text-center">$ 659.55</p>
-                        </div>
-                    </div>
-                 </div>
                 </div>
                 <div class="d-lg-flex">
-                <div class="d-md-flex justify-content-md-around">
-                    <div class="card mb-3 rounded-3 me-lg-3">
-                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                            <p class="text-secondary text-center">$ 799.55</p>
+                    <div class="d-md-flex justify-content-md-around">
+                        <div class="card mb-3 rounded-3 me-lg-3">
+                            <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260"
+                                alt="Layer 1">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                <p class="text-secondary text-center">$ 799.55</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 rounded-3 mx-lg-3">
+                            <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                height="260" alt="Layer 12">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                <p class="text-secondary text-center">$ 659.55</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card mb-3 rounded-3 mx-lg-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
-                            <p class="text-secondary text-center">$ 659.55</p>
+                    <div class="d-md-flex justify-content-md-around">
+                        <div class="card mb-3 rounded-3 mx-lg-3">
+                            <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260"
+                                alt="Layer 5">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                <p class="text-secondary text-center">$ 2195.00</p>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 ms-lg-3">
+                            <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                height="260" alt=" layer 12">
+                            <div class="card-body">
+                                <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                <p class="text-secondary text-center">$ 659.55</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-md-flex justify-content-md-around">
-                    <div class="card mb-3 rounded-3 mx-lg-3">
-                        <img src="/images/category landing page/Layer 5.png" class="card-img-top"  height="260" alt="Layer 5">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                            <p class="text-secondary text-center">$ 2195.00</p>
-                        </div>
-                    </div>
-                    <div class="card rounded-3 ms-lg-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt=" layer 12">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
-                            <p class="text-secondary text-center">$ 659.55</p>
-                        </div>
-                    </div>
-                 </div>
                 </div>
                 <div class="d-none d-lg-flex">
                     <div class="d-lg-flex">
                         <div class="d-md-flex justify-content-md-around">
                             <div class="card mb-3 rounded-3 me-lg-3">
-                                <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
+                                <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260"
+                                    alt="Layer 1">
                                 <div class="card-body">
-                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top
+                                    </p>
                                     <p class="text-secondary text-center">$ 799.55</p>
                                 </div>
                             </div>
                             <div class="card mb-3 rounded-3 mx-lg-3">
-                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260"
-                                    alt="Layer 12">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                    height="260" alt="Layer 12">
                                 <div class="card-body">
                                     <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                                     <p class="text-secondary text-center">$ 659.55</p>
@@ -585,15 +613,17 @@
                         </div>
                         <div class="d-md-flex justify-content-md-around">
                             <div class="card mb-3 rounded-3 mx-lg-3">
-                                <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260" alt="Layer 5">
+                                <img src="/images/category landing page/Layer 5.png" class="card-img-top" height="260"
+                                    alt="Layer 5">
                                 <div class="card-body">
-                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top
+                                    </p>
                                     <p class="text-secondary text-center">$ 2195.00</p>
                                 </div>
                             </div>
                             <div class="card rounded-3 ms-lg-3">
-                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260"
-                                    alt=" layer 12">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                    height="260" alt=" layer 12">
                                 <div class="card-body">
                                     <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                                     <p class="text-secondary text-center">$ 659.55</p>
@@ -603,163 +633,175 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                <button tabindex="0" class="content__button-show-more rounded-pill my-5">LOAD MORE</button> 
+                    <button tabindex="0" class="content__button-show-more rounded-pill my-5">LOAD MORE</button>
                 </div>
-                 <div class="content__hover-card mt-3">
-                     <div class="d-lg-flex">
-                     <div class="d-md-flex justify-content-md-around" >
-                    <div class="card mb-3 rounded-3 me-lg-3">
-                        <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                            <p class="text-secondary text-center">$ 799.55</p>
-                        </div>
-                    </div>
-                    <div class="card mb-3 rounded-3 mx-lg-3">
-                        <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
-                        <div class="card-body">
-                            <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
-                            <p class="text-secondary text-center">$ 659.55</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="content__hover-card mt-3 mt-md-0 d-md-flex justify-content-md-around">
-                        <div class="card mb-3 rounded-3 mx-lg-3">
-                            <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260" alt="Layer 1">
-                            <div class="card-body">
-                                <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top</p>
-                                <p class="text-secondary text-center">$ 799.55</p>
+                <div class="content__hover-card mt-3">
+                    <div class="d-lg-flex">
+                        <div class="d-md-flex justify-content-md-around">
+                            <div class="card mb-3 rounded-3 me-lg-3">
+                                <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260"
+                                    alt="Layer 1">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top
+                                    </p>
+                                    <p class="text-secondary text-center">$ 799.55</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 rounded-3 mx-lg-3">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                    height="260" alt="Layer 12">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
+                                    <p class="text-secondary text-center">$ 659.55</p>
+                                </div>
                             </div>
                         </div>
-                             <div class="card w-auto mb-3 rounded-3 ms-lg-3">
-                                 <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black" height="260" alt="Layer 12">
-                                 <div class="card-body">
+                        <div class="content__hover-card mt-3 mt-md-0 d-md-flex justify-content-md-around">
+                            <div class="card mb-3 rounded-3 mx-lg-3">
+                                <img src="/images/category landing page/Layer 1.png" class="card-img-top" height="260"
+                                    alt="Layer 1">
+                                <div class="card-body">
+                                    <p class="card-text text-center mb-1">Kristina Damn Oak With <br> White Marble top
+                                    </p>
+                                    <p class="text-secondary text-center">$ 799.55</p>
+                                </div>
+                            </div>
+                            <div class="card w-auto mb-3 rounded-3 ms-lg-3">
+                                <img src="/images/category landing page/Layer 12.png" class="card-img-top bg-black"
+                                    height="260" alt="Layer 12">
+                                <div class="card-body">
                                     <p class="card-text text-center mb-1">Hay - About A Lounge<br> Chair AAL 93</p>
                                     <p class="text-secondary text-center mt-1">$ 659.55</p>
                                 </div>
-                             </div>
-                        </div>
-                        </div>
-                    </div>
-            </section>
-            <section class="featured-section d-none d-lg-block px-3">
-                    <h1 class="text-center text-white pt-5">Featured Products</h1>
-                    <p class="text-center text-white">Unde omnis iste errror sit voluptatem</p>
-                    <div class="text-white text-center d-flex justify-content-center mb-3">
-                        <p class="border-bottom border-2 w-25 mb-4"></p>
-                        <p class="featured-section__middle-control-symbol px-3">///</p>
-                        <p class="border-bottom border-2 w-25 mb-4"></p>
-                    </div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center">
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-tex">Kristina Dam Oak Table <br> With Wite Marble
-                                            </p>
-                                            <span class="featured-section__card-span">Awesome</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
-                                                Marble</p>
-                                            <span class="featured-section__card-span">Marketing</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
-                                                Marble</p>
-                                            <span class="featured-section__card-span">Awesome</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
-                                            <span class="featured-section__card-span">Marketing</span>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
-                                            <span class="featured-section__card-span">Marketing</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
-                                                Marble</p>
-                                            <span class="featured-section__card-span">Awesome</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
-                                                Marble</p>
-                                            <span class="featured-section__card-span">Marketing</span>
-                                        </div>
-                                    </div>
-                
-                
-                                    <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
-                                        <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
-                                            width="270" height="190">
-                                        <div class="card-body">
-                                            <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With Wite
-                                                Marble</p>
-                                            <span class="featured-section__card-span">Awesome</span>
-                                        </div>
-                                    </div>
-                
-                                </div>
                             </div>
                         </div>
-                        <button class="featured-section__left-row carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="featured-section__right-row carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>                
-            </section>
-            <section class=" mb-4 bottom-accordion p-3">
+                    </div>
+                </div>
+        </section>
+        <section class="featured-section d-none d-lg-block px-3">
+            <h1 class="text-center text-white pt-5">Featured Products</h1>
+            <p class="text-center text-white">Unde omnis iste errror sit voluptatem</p>
+            <div class="text-white text-center d-flex justify-content-center mb-3">
+                <p class="border-bottom border-2 w-25 mb-4"></p>
+                <p class="featured-section__middle-control-symbol px-3">///</p>
+                <p class="border-bottom border-2 w-25 mb-4"></p>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-tex">Kristina Dam Oak Table <br> With
+                                        Wite Marble
+                                    </p>
+                                    <span class="featured-section__card-span">Awesome</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With
+                                        Wite
+                                        Marble</p>
+                                    <span class="featured-section__card-span">Marketing</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With
+                                        Wite
+                                        Marble</p>
+                                    <span class="featured-section__card-span">Awesome</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
+                                    <span class="featured-section__card-span">Marketing</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 161.png" class="card-img-top" alt="Layer-161"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text mb-4  mt-3">Hey Theme</p>
+                                    <span class="featured-section__card-span">Marketing</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 160.png" class="card-img-top" alt="Layer-160"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With
+                                        Wite
+                                        Marble</p>
+                                    <span class="featured-section__card-span">Awesome</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 159.png" class="card-img-top" alt="Layer-159"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With
+                                        Wite
+                                        Marble</p>
+                                    <span class="featured-section__card-span">Marketing</span>
+                                </div>
+                            </div>
+
+
+                            <div class="card w-auto h-auto mx-3 rounded-3 border-0 text-center">
+                                <img src="/images/section-4/desktop/Layer 158.png" class="card-img-top" alt="Layer-158"
+                                    width="270" height="190">
+                                <div class="card-body">
+                                    <p class="featured-section__card-text card-text">Kristina Dam Oak Table <br> With
+                                        Wite
+                                        Marble</p>
+                                    <span class="featured-section__card-span">Awesome</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="featured-section__left-row carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="featured-section__right-row carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class=" mb-4 bottom-accordion p-3">
             <p class="d-xl-none d-md-none d-lg-none">
                 &#169; Copyring <span>2019</span>.<br />All Rights Reserved
             </p>
@@ -890,13 +932,13 @@
                 <div class="bottom-accordion__item accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-of" aria-expanded="true"
-                            aria-controls="flush-collapseOne-of">
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-of"
+                            aria-expanded="true" aria-controls="flush-collapseOne-of">
                             CONTACT
                         </button>
                     </h2>
-                    <div id="flush-collapseOne-of" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseOne-of" class="accordion-collapse collapse show"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body p-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item py-2">
@@ -919,8 +961,8 @@
                 <div class="bottom-accordion__item accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
                             CATEGORIES
                         </button>
                     </h2>
@@ -1003,13 +1045,13 @@
                 <div class="bottom-accordion__item accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="bottom-accordion__button accordion-button collapsed shadow-none p-0 bg-white"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
                             ABOUT
                         </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                        data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body p-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item py-1">
@@ -1046,38 +1088,39 @@
                     <img src="/images/section-6/mobile/p.png" alt="pinterest" />
                 </a>
             </div>
-            </section>
-        </main>
-         <footer>
-            <div class="footer container-fluid fixed-bottom">
-                <ul class="nav justify-content-evenly">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link py-3 ps-4">
-                            <img src="/images/footer/Search Information.png" alt="Search" width="25" height="25" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link py-3 ps-4">
-                            <img src="/images/footer/Profile User.png" alt="Profile" width="25" height="25" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link py-3 pe-0 ps-4">
-                            <img src="/images/footer/Heart Outline.png" alt="Heart" width="25" height="25" />
-                            <sup class="footer__counter">1</sup></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link py-3 pe-0 ps-4">
-                            <img src="/images/footer/Bag For Shopping.png" alt="Bag" width="25" height="25" />
-                            <sup class="footer__counter">2</sup></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <div class="footer container-fluid fixed-bottom">
+            <ul class="nav justify-content-evenly">
+                <li class="nav-item">
+                    <a href="#" class="nav-link py-3 ps-4">
+                        <img src="/images/footer/Search Information.png" alt="Search" width="25" height="25" /></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link py-3 ps-4">
+                        <img src="/images/footer/Profile User.png" alt="Profile" width="25" height="25" /></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link py-3 pe-0 ps-4">
+                        <img src="/images/footer/Heart Outline.png" alt="Heart" width="25" height="25" />
+                        <sup class="footer__counter counter-like">0</sup></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link py-3 pe-0 ps-4">
+                        <img src="/images/footer/Bag For Shopping.png" alt="Bag" width="25" height="25" />
+                        <sup class="footer__counter counter-bag">0</sup></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

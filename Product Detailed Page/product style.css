@@ -111,13 +111,13 @@ body {
   width: 220px;
 }
 
-.image-section__quantity-text::-webkit-outer-spin-button,
-.image-section__quantity-text::-webkit-inner-spin-button {
+.image-section__quantity-number::-webkit-outer-spin-button,
+.image-section__quantity-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
-.image-section__quantity-text,
-.image-section__quantity-text:focus-visible {
+.image-section__quantity-number,
+.image-section__quantity-number:focus-visible {
   outline: none;
   border: none;
 }

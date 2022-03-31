@@ -21,7 +21,7 @@ $(function () {
 
   // Button with quantity the item
 
-  const quantityInput = $(".image-section__quantity-text");
+  const quantityInput = $(".image-section__quantity-number");
   quantityInput.val(1);
 
   $(".image-section__quantity-button-plus").on("click", function () {
