@@ -29,7 +29,7 @@
 .navigation__counter {
   visibility: hidden;
 }
-.navigation__silect--cursor{
+.navigation__select--cursor{
   cursor: pointer;
 }
 /* Cookies */
