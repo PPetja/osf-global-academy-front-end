@@ -29,6 +29,9 @@
 .navigation__counter {
   visibility: hidden;
 }
+.navigation__silect--cursor{
+  cursor: pointer;
+}
 /* Cookies */
 .cookies__modal-dialog-button-close {
   backdrop-filter: none;
@@ -316,7 +319,8 @@
   background-color: #262a32;
   height: 555px;
 }
-.counter-bag, .counter-like{
+.counter-bag,
+.counter-like {
   visibility: hidden;
 }
 @media only screen and (min-width: 768px) {
