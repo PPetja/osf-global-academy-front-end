@@ -1,8 +1,8 @@
 $(function () {
   // modal for cookies
-  setTimeout(function () {
-    $(".cookies__moadl").css("display", "block");
-  }, 3000);
+  // setTimeout(function () {
+  //   $(".cookies__moadl").css("display", "block");
+  // }, 3000);
   $(".cookies__modal-dialog-button-close").on("click", function () {
     $(".cookies__moadl").css("display", "none");
   });
@@ -11,31 +11,57 @@ $(function () {
   });
 
   // modal for login
-  $(".login-modal__img-container").mousedown(function () {
-    $(".login-modal__form-password").removeAttr("type");
+  const loginModalContainer = $(".login-modal__img-container");
+  const loginModalPassword = $(".login-modal__form-password");
+
+  loginModalContainer.mousedown(function () {
+    loginModalPassword.removeAttr("type");
   });
-  $(".login-modal__img-container").mouseup(function () {
-    $(".login-modal__form-password").attr("type", "password");
+
+  loginModalContainer.mouseup(function () {
+    loginModalPassword.attr("type", "password");
   });
+
   // sesction 1
+  // Counter for like
 
-  let counterBag = 0;
-  let counterlike = 0;
+  const numberCounterOfLikes = $(".counter-like");
+  let numberCounterForLike = 0;
 
-  $(".card__hover-btn-bag").on("click", function () {
-    counterBag += 1;
-    $(".counter-bag").css("visibility", "visible").empty();
-    $(".counter-bag").append(counterBag);
-    if (counterBag >= 10) {
-      $(".counter-bag").css("padding-top", "2px").css("padding-bottom", "2px");
-    }
-  });
   $(".card__hover-btn-like").on("click", function () {
-    counterlike += 1;
-    $(".counter-like").css("visibility", "visible").empty();
-    $(".counter-like").append(counterlike);
-    if (counterlike >= 10) {
-      $(".counter-like").css("padding-top", "2px").css("padding-bottom", "2px");
+    numberCounterForLike += 1;
+    numberCounterOfLikes.css("visibility", "visible").empty();
+    numberCounterOfLikes.append(numberCounterForLike);
+
+    if (numberCounterForLike >= 10) {
+      numberCounterOfLikes
+        .css("padding-top", "2px")
+        .css("padding-bottom", "2px");
     }
   });
+
+  // Counter for bag
+
+  const numberCounterOfBags = $(".counter-bag");
+  $(".card__hover-btn-bag").on("click", function () {
+    localStorage.clickcount = +localStorage.clickcount + 1;
+
+    numberCounterOfBags
+      .empty()
+      .append(localStorage.clickcount)
+      .css("visibility", "visible");
+
+    if (localStorage.clickcount >= 10) {
+      numberCounterOfBags
+        .css("padding-top", "2px")
+        .css("padding-bottom", "2px");
+    }
+  });
+
+  if (+localStorage.clickcount > 0) {
+    numberCounterOfBags
+      .empty()
+      .append(localStorage.clickcount)
+      .css("visibility", "visible");
+  }
 });
