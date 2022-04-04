@@ -1,8 +1,9 @@
 $(function () {
   // modal for cookies
-  // setTimeout(function () {
-  //   $(".cookies__moadl").css("display", "block");
-  // }, 3000);
+  setTimeout(function () {
+    $(".cookies__moadl").css("display", "block");
+  }, 3000);
+
   $(".cookies__modal-dialog-button-close").on("click", function () {
     $(".cookies__moadl").css("display", "none");
   });
@@ -25,43 +26,55 @@ $(function () {
   // sesction 1
   // Counter for like
 
-  const numberCounterOfLikes = $(".counter-like");
-  let numberCounterForLike = 0;
-
+  const numberCounterOfLike = $(".counter-like");
   $(".card__hover-btn-like").on("click", function () {
-    numberCounterForLike += 1;
-    numberCounterOfLikes.css("visibility", "visible").empty();
-    numberCounterOfLikes.append(numberCounterForLike);
+    const clickCountLike = +localStorage.getItem("clickCountLike") + 1;
+    localStorage.setItem("clickCountLike", clickCountLike);
 
-    if (numberCounterForLike >= 10) {
-      numberCounterOfLikes
+    numberCounterOfLike
+      .empty()
+      .append(clickCountLike)
+      .css("visibility", "visible");
+
+    if (clickCountLike >= 10) {
+      numberCounterOfLike
         .css("padding-top", "2px")
         .css("padding-bottom", "2px");
     }
   });
+  const clickCountLike = +localStorage.getItem("clickCountLike");
+
+  if (clickCountLike > 0) {
+    numberCounterOfLike
+      .empty()
+      .append(clickCountLike)
+      .css("visibility", "visible");
+  }
 
   // Counter for bag
 
   const numberCounterOfBags = $(".counter-bag");
   $(".card__hover-btn-bag").on("click", function () {
-    localStorage.clickcount = +localStorage.clickcount + 1;
+    const clickCountBag = +localStorage.getItem("clickCountBag") + 1;
+    localStorage.setItem("clickCountBag", clickCountBag);
 
     numberCounterOfBags
       .empty()
-      .append(localStorage.clickcount)
+      .append(clickCountBag)
       .css("visibility", "visible");
 
-    if (localStorage.clickcount >= 10) {
+    if (clickCountBag >= 10) {
       numberCounterOfBags
         .css("padding-top", "2px")
         .css("padding-bottom", "2px");
     }
   });
+  const clickCountBag = +localStorage.getItem("clickCountBag");
 
-  if (+localStorage.clickcount > 0) {
+  if (clickCountBag > 0) {
     numberCounterOfBags
       .empty()
-      .append(localStorage.clickcount)
+      .append(clickCountBag)
       .css("visibility", "visible");
   }
 });

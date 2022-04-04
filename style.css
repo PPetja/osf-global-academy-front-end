@@ -29,7 +29,7 @@
 .navigation__counter {
   visibility: hidden;
 }
-.navigation__select--cursor{
+.navigation__select--cursor {
   cursor: pointer;
 }
 /* Cookies */
@@ -309,7 +309,7 @@
   font-weight: bolder;
   right: 12px;
   top: -9px;
-  background-color: #262a32;
+  background-color: white;
 }
 .card-items__header-line {
   width: 25%;
@@ -342,10 +342,6 @@
     font-size: 12px;
     color: #84bc22;
     margin-top: -10px;
-  }
-  .footer__counter,
-  .navigation__counter {
-    background-color: white;
   }
   .navigation__brand {
     width: auto;
