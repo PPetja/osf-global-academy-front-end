@@ -1,7 +1,7 @@
-// category page
-const showCardButton = document.querySelector(".content__button-show-more");
-const visibleCard = document.querySelector(".content__hover-card");
-showCardButton.addEventListener("click", function (event) {
-  visibleCard.style.display = "block";
-  showCardButton.style.display = "none";
+// load more button
+const showCardButton = $(".content__button-show-more");
+const visibleCard = $(".content__hover-card");
+showCardButton.on("click", function (event) {
+  visibleCard.css ("display", "block");
+  showCardButton.css("display", "none");
 });
