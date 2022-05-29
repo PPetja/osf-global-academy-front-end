@@ -1,8 +1,8 @@
 $(function () {
   // modal for cookies
-  setTimeout(function () {
-    $(".cookies__moadl").css("display", "block");
-  }, 3000);
+  // setTimeout(function () {
+  //   $(".cookies__moadl").css("display", "block");
+  // }, 3000);
 
   $(".cookies__modal-dialog-button-close").on("click", function () {
     $(".cookies__moadl").css("display", "none");
@@ -27,22 +27,48 @@ $(function () {
   // Counter for like
 
   const numberCounterOfLike = $(".counter-like");
-  $(".card__hover-btn-like").on("click", function () {
-    const clickCountLike = +localStorage.getItem("clickCountLike") + 1;
-    localStorage.setItem("clickCountLike", clickCountLike);
+  const filterOfLike = $(".card__hover-btn-like");
+  filterOfLike.on("click", function () {
+    const self = $(this);
+    let clickCountLike;
 
-    numberCounterOfLike
-      .empty()
-      .append(clickCountLike)
-      .css("visibility", "visible");
+    if (self.css("filter") == "none") {
+      self.css("filter", "grayscale(1)");
 
-    if (clickCountLike >= 10) {
+      localStorage.setItem("filterLike", "grayscale(1)");
+
+      clickCountLike = +localStorage.getItem("clickCountLike") + 1;
+      localStorage.setItem("clickCountLike", clickCountLike);
       numberCounterOfLike
-        .css("padding-top", "2px")
-        .css("padding-bottom", "2px");
+        .empty()
+        .append(clickCountLike)
+        .css("visibility", "visible");
+    } else {
+      self.css("filter", "none");
+
+      localStorage.setItem("filterLike", "none");
+
+      clickCountLike = +localStorage.getItem("clickCountLike") - 1;
+      localStorage.setItem("clickCountLike", clickCountLike);
+      numberCounterOfLike
+        .empty()
+        .append(clickCountLike)
+        .css("visibility", "visible");
+
+      if (clickCountLike === 0) {
+        numberCounterOfLike.css("visibility", "hidden");
+      }
     }
   });
+
+  const filterLike = localStorage.getItem("filterLike");
   const clickCountLike = +localStorage.getItem("clickCountLike");
+
+  if (filterLike == "grayscale(1)") {
+    filterOfLike.css("filter", "grayscale(1)");
+  } else {
+    filterOfLike.css("filter", "none");
+  }
 
   if (clickCountLike > 0) {
     numberCounterOfLike
@@ -50,23 +76,38 @@ $(function () {
       .append(clickCountLike)
       .css("visibility", "visible");
   }
+  const firstLikeBtn = $(".card__hover-btn-bag .first");
+  firstLikeBtn.on("click", function () {
+    const self = $(this);
+  });
 
   // Counter for bag
 
   const numberCounterOfBags = $(".counter-bag");
   $(".card__hover-btn-bag").on("click", function () {
-    const clickCountBag = +localStorage.getItem("clickCountBag") + 1;
-    localStorage.setItem("clickCountBag", clickCountBag);
+    const self = $(this);
+    let clickCountBag;
 
-    numberCounterOfBags
-      .empty()
-      .append(clickCountBag)
-      .css("visibility", "visible");
-
-    if (clickCountBag >= 10) {
+    if (self.css("filter") == "none") {
+      self.css("filter", "grayscale(1)");
+      clickCountBag = +localStorage.getItem("clickCountBag") + 1;
+      localStorage.setItem("clickCountBag", clickCountBag);
       numberCounterOfBags
-        .css("padding-top", "2px")
-        .css("padding-bottom", "2px");
+        .empty()
+        .append(clickCountBag)
+        .css("visibility", "visible");
+    } else {
+      self.css("filter", "none");
+      clickCountBag = +localStorage.getItem("clickCountBag") - 1;
+      localStorage.setItem("clickCountBag", clickCountBag);
+      numberCounterOfBags
+        .empty()
+        .append(clickCountBag)
+        .css("visibility", "visible");
+
+      if (clickCountBag === 0) {
+        numberCounterOfBags.css("visibility", "hidden");
+      }
     }
   });
   const clickCountBag = +localStorage.getItem("clickCountBag");
@@ -78,3 +119,5 @@ $(function () {
       .css("visibility", "visible");
   }
 });
+
+
