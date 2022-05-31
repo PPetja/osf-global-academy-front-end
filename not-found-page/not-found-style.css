@@ -1,5 +1,5 @@
 .content{
-    margin-top: 60px;
+    margin-top: 35px;
     background-color: #f1edea;
     height: auto;
 }
@@ -11,7 +11,8 @@
     font-weight: 500;
 }
 .content__warning{
-    font-size: 500%;
+    font-size: 450%;
+    margin-left: -10px;
     color: #82b921;
     letter-spacing: 5px;
     margin-bottom: 70px;
@@ -39,4 +40,10 @@
 }
 .content__middle-box{
     opacity: 93%;
+}
+@media only screen and (min-width: 720px) {
+.content__warning{
+    font-size: 600%;
+    margin-left: 0;
+    }
 }
