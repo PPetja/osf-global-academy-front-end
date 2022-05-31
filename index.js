@@ -24,62 +24,65 @@ $(function () {
   });
 
   // sesction 1
-  // Counter for like
+  // Counter and set ro the local storage data for like
 
+  const favoriteProduct = localStorage.getItem("arrOfFavoriteProduct");
+  for (let i = 0; i < favoriteProduct.length; i++) {
+    $(`[data-productID='${favoriteProduct[i]}'] .card__hover-btn-like`).css(
+      "filter",
+      "grayscale(1)"
+    );
+  }
+
+  let arrOfFavoriteProduct = JSON.parse(favoriteProduct);
   const numberCounterOfLike = $(".counter-like");
-  const filterOfLike = $(".card__hover-btn-like");
-  filterOfLike.on("click", function () {
+  const activeLike = $(".card__hover-btn-like");
+  activeLike.on("click", function () {
     const self = $(this);
     let clickCountLike;
 
+    const containerCardId = self
+      .closest(".card__container--width")
+      .attr("data-productID");
+
     if (self.css("filter") == "none") {
       self.css("filter", "grayscale(1)");
-
-      localStorage.setItem("filterLike", "grayscale(1)");
-
       clickCountLike = +localStorage.getItem("clickCountLike") + 1;
       localStorage.setItem("clickCountLike", clickCountLike);
       numberCounterOfLike
         .empty()
         .append(clickCountLike)
         .css("visibility", "visible");
+
+      arrOfFavoriteProduct.push(containerCardId);
     } else {
       self.css("filter", "none");
-
-      localStorage.setItem("filterLike", "none");
-
       clickCountLike = +localStorage.getItem("clickCountLike") - 1;
       localStorage.setItem("clickCountLike", clickCountLike);
       numberCounterOfLike
         .empty()
         .append(clickCountLike)
         .css("visibility", "visible");
-
       if (clickCountLike === 0) {
         numberCounterOfLike.css("visibility", "hidden");
       }
+      const filteredArayOfFavorite = arrOfFavoriteProduct.filter(
+        (id) => id != containerCardId
+      );
+      arrOfFavoriteProduct = filteredArayOfFavorite;
     }
+    localStorage.setItem(
+      "arrOfFavoriteProduct",
+      JSON.stringify(arrOfFavoriteProduct)
+    );
   });
-
-  const filterLike = localStorage.getItem("filterLike");
   const clickCountLike = +localStorage.getItem("clickCountLike");
-
-  if (filterLike == "grayscale(1)") {
-    filterOfLike.css("filter", "grayscale(1)");
-  } else {
-    filterOfLike.css("filter", "none");
-  }
-
   if (clickCountLike > 0) {
     numberCounterOfLike
       .empty()
       .append(clickCountLike)
       .css("visibility", "visible");
   }
-  const firstLikeBtn = $(".card__hover-btn-bag .first");
-  firstLikeBtn.on("click", function () {
-    const self = $(this);
-  });
 
   // Counter for bag
 
@@ -119,5 +122,3 @@ $(function () {
       .css("visibility", "visible");
   }
 });
-
-
