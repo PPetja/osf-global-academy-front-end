@@ -28,7 +28,7 @@ $(function () {
 
   const favoriteProduct = localStorage.getItem("arrOfFavoriteProduct");
   let arrOfFavoriteProduct = JSON.parse(favoriteProduct);
-  
+
   if (arrOfFavoriteProduct === null) {
     arrOfFavoriteProduct = [];
   }
@@ -90,6 +90,10 @@ $(function () {
 
   // Counter for bag
 
+
+
+
+  
   const numberCounterOfBags = $(".counter-bag");
   $(".card__hover-btn-bag").on("click", function () {
     const self = $(this);
