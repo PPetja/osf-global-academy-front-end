@@ -27,14 +27,18 @@ $(function () {
   // Counter and set ro the local storage data for like
 
   const favoriteProduct = localStorage.getItem("arrOfFavoriteProduct");
-  for (let i = 0; i < favoriteProduct.length; i++) {
-    $(`[data-productID='${favoriteProduct[i]}'] .card__hover-btn-like`).css(
+  let arrOfFavoriteProduct = JSON.parse(favoriteProduct);
+  
+  if (arrOfFavoriteProduct === null) {
+    arrOfFavoriteProduct = [];
+  }
+
+  for (let i = 0; i < arrOfFavoriteProduct.length; i++) {
+    $(`[data-productID='${arrOfFavoriteProduct[i]}'] .card__hover-btn-like`).css(
       "filter",
       "grayscale(1)"
     );
   }
-
-  let arrOfFavoriteProduct = JSON.parse(favoriteProduct);
   const numberCounterOfLike = $(".counter-like");
   const activeLike = $(".card__hover-btn-like");
   activeLike.on("click", function () {
