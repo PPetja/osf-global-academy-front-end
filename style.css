@@ -42,7 +42,7 @@
 .cookies__modal-dialog-link,
 .cookies__modal-dialog-link:hover,
 .cookies__modal-dialog-header {
-  color: #82b921;
+  color: #181d0f;
 }
 
 .cookies__moadl {
@@ -53,6 +53,7 @@
 .login-modal__link,
 .login-modal__link:hover {
   color: #84bc22;
+
 }
 .login-modal__button {
   background: #84bc22;

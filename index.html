@@ -19,10 +19,10 @@
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon navigation__hamburger-icon d-xl-none d-md-none d-lg-none"></span>
         </button>
-  
         <a class="navigation__brand navbar-brand d-flex navigation__button-home p-md-1 p-xl-3 mt-xl-3 pt-md-0 mt-1"
           href="/index.html">
-          <img src="/images/header/logo.png" alt="logo" width="46" height="46" class="navigation__button-icon ms-md-3" />
+          <img src="/images/header/logo.png" alt="logo" width="46" height="46"
+            class="navigation__button-icon ms-md-3" />
           <div class="navigation__logo-text">
             <p class="m-0 p-0 navigation__logo-text-top">
               <strong>OSF</strong>
@@ -129,8 +129,8 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link px-0 mx-3">
-                  <img src="/images/footer/Profile-User.png" alt="Profile" width="25" height="25"
-                    class="nav__img--filter" /></a>
+                  <img src="/images/footer/Profile-User.png" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" alt="Profile"
+                    width="25" height="25" class="nav__img--filter" /></a>
               </li>
               <li class="nav-item nav__item-heart">
                 <a href="#" class="nav-link px-0 mx-2">
@@ -353,8 +353,8 @@
   </header>
   <main>
     <section>
-      <div class="login-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+      <div class="login-modal modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="false">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body d-flex flex-column align-items-center">
@@ -519,11 +519,8 @@
               <img src="/images/section-2/mobile/Layer-1.png" class="card-img-top" alt="Layer-1" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Kristina Damn Oak Table With White <br />
-                  Marble Top
-                </p>
-                <span>$ 799.55</span>
+                <p class="card-text w-100">Kristina Damn Oak Table With White Marble Top</p>
+                <span>$ <span class="card-price"> 799.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -542,9 +539,7 @@
                   height="250" /></a>
               <div class="card-body">
                 <a href="/product-detailed-Page/product-page.html" class="text-decoration-none text-black">
-                  <p class="card-text pb-2 pt-0">
-                    Hey - About A Longe <br />Chair AAL 93
-                  </p>
+                  <p class="card-text pb-4 pt-0 w-100">Hey - About A Longe Chair AAL 93</p>
                 </a>
                 <a href="/product-detailed-Page/product-page.html"
                   class="card__button-price--form text-decoration-none border-2 border text-success">$675.55</a>
@@ -558,11 +553,8 @@
               <img src="/images/section-2/mobile/Layer-3.png" class="card-img-top" alt="Layer-3" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Activate Facial Mask and <br />
-                  Charocal Soap
-                </p>
-                <span>$ <span class="price">129.55</span></span>
+                <p class="card-text w-100">Activate Facial Mask and Charocal Soap</p>
+                <span>$ <span class="card-price"> 129.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -576,14 +568,11 @@
           </div>
           <div class="card__container--width card-background carousel-item rounded-3 " data-productID="4">
             <div class="card border-0">
-              <img src="/images/section-2/mobile/Layer-4.png" class="card-img-top" alt="Layer-4" width="200"
+              <img src="/images/section-2/mobile/Layer-4.png" class="card-img-top mb-2" alt="Layer-4" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Coctail Table Walnut <br />
-                  | Yes
-                </p>
-                <span>$ 299.99</span>
+                <p class="card-text w-100 mb-3">Coctail Table Walnut | Yes</p>
+                <span>$ <span class="card-price"> 299.99 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -600,11 +589,8 @@
               <img src="/images/section-2/mobile/Layer-5.png" class="card-img-top" alt="Layer-5" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Hay- About A Lounge <br />
-                  Chair AAL 93
-                </p>
-                <span>$ 659.55</span>
+                <p class="card-text w-100 mt-2 mb-3">Hay- About A Lounge Chair AAL 93</p>
+                <span>$ <span class="card-price"> 659.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -622,7 +608,7 @@
                 height="250" />
               <div class="card-body pt-4">
                 <p class="card-text">TORY DESC CALENDAR</p>
-                <span class="card__bottom-text">$ 410.99</span>
+                <span class="card__bottom-text card-price">$ <span>410.99</span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -639,11 +625,8 @@
               <img src="/images/section-2/mobile/Layer-7.png" class="card-img-top" alt="Layer-7" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  CH445 Wing Chair on <br />
-                  SIUTE NY
-                </p>
-                <span>$ 330.55</span>
+                <p class="card-text w-100 mt-2">CH445 Wing Chair on SIUTE NY</p>
+                <span>$ <span class="card-price"> 330.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -658,9 +641,7 @@
           <div class="card__container--width card__special--pink carousel-item rounded-3" data-productID="8">
             <div class="card__special border-0 rounded-3 d-flex align-items-end"></div>
             <div class="card__text-container">
-              <p class="card-text text-white">
-                My Dragon are misbehaving again Unbelieveable!
-              </p>
+              <p class="card-text text-white">My Dragon are misbehaving again Unbelieveable!</p>
               <img src="/images/section-2/mobile/Layer-150.png" alt="Layer-150" width="30" height="30"
                 class="m-1 mb-4" />
               <span class="text-white">5H AGO </span>
@@ -674,11 +655,8 @@
               <img src="/images/section-2/mobile/Layer-1.png" class="card-img-top" alt="Layer-1" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Kristina Damn Oak Table With White <br />
-                  Marble Top
-                </p>
-                <span>$ 799.55</span>
+                <p class="card-text w-100 px-3">Kristina Damn Oak Table With White Marble Top</p>
+                <span>$ <span class="card-price"> 799.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex">
@@ -697,9 +675,7 @@
                   height="250" /></a>
               <div class="card-body">
                 <a href="/product-detailed-Page/product-page.html" class="text-decoration-none text-black">
-                  <p class="card-text pb-2 pt-0">
-                    Hey - About A Longe <br />Chair AAL 93
-                  </p>
+                  <p class="card-text pb-2 pt-0 w-100 px-5">Hey - About A Longe Chair AAL 93</p>
                 </a>
                 <a href="/product-detailed-Page/product-page.html"
                   class="card__button-price--form text-decoration-none border-2 border text-success">$675.55</a>
@@ -713,11 +689,8 @@
               <img src="/images/section-2/mobile/Layer-3.png" class="card-img-top" alt="Layer-3" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Activate Facial Mask and <br />
-                  Charocal Soap
-                </p>
-                <span>$ 129.55</span>
+                <p class="card-text w-100 px-4">Activate Facial Mask and Charocal Soap</p>
+                <span>$ <span class="card-price">129.55</span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex p-4">
@@ -734,11 +707,8 @@
               <img src="/images/section-2/mobile/Layer-4.png" class="card-img-top" alt="Layer-4" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Coctail Table Walnut <br />
-                  | Yes
-                </p>
-                <span>$ 299.99</span>
+                <p class="card-text px-5 mx-3">Coctail Table Walnut | Yes</p>
+                <span>$ <span class="card-price">299.99</span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex p-4">
@@ -755,11 +725,8 @@
               <img src="/images/section-2/mobile/Layer-5.png" class="card-img-top" alt="Layer-5" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  Hay- About A Lounge <br />
-                  Chair AAL 93
-                </p>
-                <span>$ 659.55</span>
+                <p class="card-text px-5">Hay- About A Lounge Chair AAL 93</p>
+                <span>$ <span class="card-price"> 659.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex p-4">
@@ -776,8 +743,8 @@
               <img src="/images/section-2/mobile/Layer-6.png" class="card-img-top" alt="Layer-6" width="200"
                 height="250" />
               <div class="card-body pt-4">
-                <p class="card-text">TORY DESC CALENDAR</p>
-                <span class="card__bottom-text">$ 410.99</span>
+                <p class="card-text mb-4">TORY DESC CALENDAR</p>
+                <span class="card__bottom-text card-price">$ <span>410.99</span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex p-4">
@@ -794,16 +761,13 @@
               <img src="/images/section-2/mobile/Layer-7.png" class="card-img-top" alt="Layer-7" width="200"
                 height="250" />
               <div class="card-body">
-                <p class="card-text">
-                  CH445 Wing Chair on <br />
-                  SIUTE NY
-                </p>
-                <span>$ 330.55</span>
+                <p class="card-text px-5">CH445 Wing Chair on SIUTE NY</p>
+                <span>$ <span class="card-price"> 330.55 </span></span>
               </div>
             </div>
             <div class="card__hover-items d-flex p-4">
               <button class="card__hover-btn-bag border-0 rounded-circle p-4 bg-white">
-                <img src="/images/section-2/mobile/Plus-(24x24).png" alt="Plus" width="40" height="40"/>
+                <img src="/images/section-2/mobile/Plus-(24x24).png" alt="Plus" width="40" height="40" />
               </button>
               <button class="card__hover-btn-like border-0 rounded-circle p-4 bg-white">
                 <img src="/images/section-2/mobile/Heart-(24x24).png" alt="Heart" width="40" height="40" />
@@ -813,9 +777,7 @@
           <div class="card__container--width card__special--pink rounded-3 my-3 mx-2" data-productID="8">
             <div class="card__special border-0 rounded-3 d-flex align-items-end"></div>
             <div class="card__text-container">
-              <p class="card-text text-white">
-                My Dragon are misbehaving again Unbelieveable!
-              </p>
+              <p class="card-text text-white">My Dragon are misbehaving again Unbelieveable!</p>
               <img src="/images/section-2/mobile/Layer-150.png" alt="Layer-150" width="30" height="30"
                 class="m-1 mb-4" />
               <span class="text-white">5H AGO </span>
@@ -823,7 +785,8 @@
           </div>
           <button class="card__button-load-more rounded-pill py-1 mt-3">
             <span class="m-0">LOAD MORE</span>
-            <img src="/images/section-2/desktop/repeat-icon-png-23.jpg" alt="repeat-icon" class="ms-3" style="width: 25px; height: 25px;"/>
+            <img src="/images/section-2/desktop/repeat-icon-png-23.jpg" alt="repeat-icon" class="ms-3"
+              style="width: 25px; height: 25px;" />
           </button>
         </div>
       </div>
@@ -1026,7 +989,8 @@
               <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Drink</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Electronics</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Electronics</a>
             </li>
           </ul>
         </div>
@@ -1036,7 +1000,8 @@
               <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Home</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Jewerly</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Jewerly</a>
             </li>
             <li class="nav-item py-1">
               <a href="#" class="text-decoration-none text-secondary">Kids & Baby</a>
@@ -1049,7 +1014,8 @@
               <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Mobile</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Motorcycles</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Motorcycles</a>
             </li>
             <li class="nav-item py-1">
               <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Movies</a>
@@ -1084,13 +1050,16 @@
                 us</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Delivery</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Delivery</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Testimonials</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Testimonials</a>
             </li>
             <li class="nav-item py-1">
-              <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-secondary">Contact</a>
+              <a href="/not-found/not-found.html" target="_blank"
+                class="text-decoration-none text-secondary">Contact</a>
             </li>
           </ul>
         </div>
@@ -1114,7 +1083,8 @@
                   Québec, Québec G2K 2H6
                 </li>
                 <li class="py-2">
-                  <a href="mailto:contact@osf-global.com" class="text-decoration-none text-dark">contact@osf-global.com</a>
+                  <a href="mailto:contact@osf-global.com"
+                    class="text-decoration-none text-dark">contact@osf-global.com</a>
                 </li>
                 <li class="py-2">
                   <a href="tel:+1(888)5484344" class="text-decoration-none text-dark">
@@ -1150,7 +1120,8 @@
                   <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Drink</a>
                 </li>
                 <li class="nav-item py-1">
-                  <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Electronics</a>
+                  <a href="/not-found/not-found.html" target="_blank"
+                    class="text-decoration-none text-dark">Electronics</a>
                 </li>
                 <li class="nav-item py-1">
                   <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Home</a>
@@ -1169,7 +1140,8 @@
                   <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Mobile</a>
                 </li>
                 <li class="nav-item py-1">
-                  <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Motorcycles</a>
+                  <a href="/not-found/not-found.html" target="_blank"
+                    class="text-decoration-none text-dark">Motorcycles</a>
                 </li>
                 <li class="nav-item py-1">
                   <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Movies</a>
@@ -1211,10 +1183,12 @@
                     us</a>
                 </li>
                 <li class="nav-item py-1">
-                  <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Delivery</a>
+                  <a href="/not-found/not-found.html" target="_blank"
+                    class="text-decoration-none text-dark">Delivery</a>
                 </li>
                 <li class="nav-item py-1">
-                  <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Testimonials</a>
+                  <a href="/not-found/not-found.html" target="_blank"
+                    class="text-decoration-none text-dark">Testimonials</a>
                 </li>
                 <li class="nav-item py-1">
                   <a href="/not-found/not-found.html" target="_blank" class="text-decoration-none text-dark">Contact</a>
@@ -1248,7 +1222,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link py-3 ps-4">
-            <img src="/images/footer/Profile-User.png" alt="Profile" width="25" height="25" /></a>
+            <img src="/images/footer/Profile-User.png" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" alt="Profile" width="25" height="25" /></a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link py-3 pe-0 ps-4">
