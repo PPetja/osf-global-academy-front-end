@@ -223,7 +223,7 @@
   opacity: 1;
   z-index: 1;
 }
-.card__hover-btn-bag,
+.card__hover-btn-cart,
 .card__hover-btn-like {
   z-index: 5;
 }

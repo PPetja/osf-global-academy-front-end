@@ -24,10 +24,6 @@ $(function () {
   });
 
   // sesction 1
-  // Refactoriing for copied string (counter for like and bag);
-  // Counter set to the local storage data for like
-  // fix some bugs with modal "login" -- DONE!
-
   const numberCounterOfLike = $(".counter-like");
   const activeLike = $(".card__hover-btn-like");
 
@@ -83,76 +79,86 @@ $(function () {
   }
 
   // Counter for bag
+  const numberCounterOfCarts = $(".counter-cart");
+  const activeCart = $(".card__hover-btn-cart");
 
-  const numberCounterOfBags = $(".counter-bag");
-  const activeBag = $(".card__hover-btn-bag");
+  const cartWithProduct = localStorage.getItem("objectForCart") ?? "{}";
+  let objectForCart = JSON.parse(cartWithProduct);
 
-  const bagWithProduct = localStorage.getItem("objectForBag") ?? "{}";
-  let objectForBag = JSON.parse(bagWithProduct);
-
-  for (let key in objectForBag) {
-    $(`[data-productID='${key.slice(3)}'] .card__hover-btn-bag`).css(
+  for (let key in objectForCart) {
+    $(`[data-productID='${key.slice(3)}'] .card__hover-btn-cart`).css(
       "filter",
       "grayscale(1)"
     );
   }
 
-  activeBag.on("click", function () {
+  activeCart.on("click", function () {
     const self = $(this);
-    let clickCountBag;
+
     const containerCardId = self
       .closest(".card__container--width")
       .attr("data-productID");
 
     const cartProdctId = `id-${containerCardId}`;
-    objectForBag[cartProdctId] = {
+
+    objectForCart[cartProdctId] = {
       id: +containerCardId,
+      quantity: 1,
     };
 
     if (self.css("filter") == "none") {
       self.css("filter", "grayscale(1)");
 
-      objectForBag[cartProdctId].name = $(
+      objectForCart[cartProdctId].name = $(
         `[data-productID='${self
           .closest(".card__container--width")
           .attr("data-productID")}'] .card-text`
       ).html();
 
-      objectForBag[cartProdctId].price = +$(
+      objectForCart[cartProdctId].price = +$(
         `[data-productID='${self
           .closest(".card__container--width")
           .attr("data-productID")}'] .card-price`
       ).html();
 
-      objectForBag[cartProdctId].imageUrl = $(
+      objectForCart[cartProdctId].imageUrl = $(
         `[data-productID='${self
           .closest(".card__container--width")
           .attr("data-productID")}'] .card-img-top`
       ).attr("src");
     } else {
       self.css("filter", "none");
-      delete objectForBag[cartProdctId];
+      delete objectForCart[cartProdctId];
     }
-    localStorage.setItem("objectForBag", JSON.stringify(objectForBag));
+    localStorage.setItem("objectForCart", JSON.stringify(objectForCart));
 
-    numberCounterOfBags
+    numberCounterOfCarts
       .empty()
-      .append(Object.keys(objectForBag).length)
+      .append(Object.keys(objectForCart).length)
       .css("visibility", "visible");
 
-    if (Object.keys(objectForBag).length === 0) {
-      numberCounterOfBags.css("visibility", "hidden");
-    } else if (Object.keys(objectForBag).length > 0) {
-      numberCounterOfBags
+    if (Object.keys(objectForCart).length === 0) {
+      numberCounterOfCarts.css("visibility", "hidden");
+    } else if (Object.keys(objectForCart).length > 0) {
+      numberCounterOfCarts
         .empty()
-        .append(Object.keys(objectForBag).length)
+        .append(Object.keys(objectForCart).length)
         .css("visibility", "visible");
     }
   });
-  if (Object.keys(objectForBag).length > 0) {
-    numberCounterOfBags
+  if (Object.keys(objectForCart).length > 0) {
+    numberCounterOfCarts
       .empty()
-      .append(Object.keys(objectForBag).length)
+      .append(Object.keys(objectForCart).length)
       .css("visibility", "visible");
-  }
+  };
+
+  // Category-Landing page
+  // load more button
+  const showCardButton = $(".content__button-show-more");
+  const visibleCard = $(".content__hover-card");
+  showCardButton.on("click", function (event) {
+    visibleCard.css("display", "block");
+    showCardButton.css("display", "none");
+  });
 });

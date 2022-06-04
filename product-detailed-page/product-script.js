@@ -50,4 +50,18 @@ $(function () {
       $(this).empty().append("Read more");
     }
   });
+
+// adding product to the cart
+  const productFromDetaliedPage = $(".image-section__add-to-card-button");
+  productFromDetaliedPage.on("click", function () {
+    const cartWithProduct = localStorage.getItem("objectForCart") ?? "{}";
+    let objectForCart = JSON.parse(cartWithProduct);
+      objectForCart[detail] = {
+        name: $(".image-section__header").html(),
+      };
+
+    console.log(objectForCart);
+    
+
+  })
 });
