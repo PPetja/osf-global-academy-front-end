@@ -151,7 +151,7 @@ $(function () {
       .empty()
       .append(Object.keys(objectForCart).length)
       .css("visibility", "visible");
-  };
+  }
 
   // Category-Landing page
   // load more button
