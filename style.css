@@ -181,18 +181,20 @@
 .card__bottom-text {
   font-size: 14px;
 }
-.card__button-buy--form {
+.card__button-buy {
   border-radius: 0 15px 15px 0;
   margin-left: -6px;
   padding: 5px 10px 5px 5px;
   color: black;
+  background:none;
 }
 
-.card__button-price--form {
+.card__button-price {
   padding: 5px 15px 5px 15px;
   border-radius: 15px 0px 0px 15px;
+  background: none;
 }
-.card__button-buy--form:hover {
+.card__button-buy:hover {
   color: white;
   background-color: #84bc22;
 }
